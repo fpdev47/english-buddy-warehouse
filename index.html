@@ -1,0 +1,2105 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0, maximum-scale=1.0">
+<title>English for Warehouse Update Meetings — Your English Buddy</title>
+<style>
+  * { box-sizing: border-box; margin: 0; padding: 0; }
+
+  body {
+    font-family: -apple-system, BlinkMacSystemFont, 'Segoe UI', sans-serif;
+    background: #f0f4f4;
+    color: #2c2c2a;
+    font-size: 17px;
+    line-height: 1.75;
+  }
+
+  /* ── Header ── */
+  .site-header {
+    background: #1a5d61;
+    color: #fff;
+    padding: 20px 32px 0;
+  }
+
+  .header-top {
+    display: flex;
+    align-items: center;
+    gap: 18px;
+    margin-bottom: 16px;
+  }
+
+  .header-logo {
+    width: 72px;
+    height: 72px;
+    object-fit: contain;
+    flex-shrink: 0;
+    filter: drop-shadow(0 2px 6px rgba(0,0,0,0.25));
+  }
+
+  .header-text { flex: 1; }
+
+  .header-academy {
+    font-size: 11px;
+    font-weight: 600;
+    text-transform: uppercase;
+    letter-spacing: 0.12em;
+    color: rgba(255,255,255,0.65);
+    margin-bottom: 3px;
+  }
+
+  .header-title {
+font-size: 24px;
+    font-weight: 700;
+    color: #fff;
+    line-height: 1.2;
+    margin-bottom: 4px;
+  }
+
+  .header-subtitle {
+    font-size: 12px;
+    color: rgba(255,255,255,0.6);
+  }
+
+  /* ── Tab bar ── */
+  .tab-bar {
+    display: flex;
+    gap: 3px;
+    overflow-x: auto;
+    scrollbar-width: none;
+    padding-bottom: 0;
+  }
+  .tab-bar::-webkit-scrollbar { display: none; }
+
+  .tab-btn {
+    padding: 10px 16px;
+    border: none;
+    border-radius: 8px 8px 0 0;
+    background: rgba(255,255,255,0.12);
+    color: rgba(255,255,255,0.8);
+    cursor: pointer;
+    font-size: 14px;
+    font-weight: 500;
+    white-space: nowrap;
+    transition: background 0.15s, color 0.15s;
+    font-family: inherit;
+  }
+  .tab-btn:hover { background: rgba(255,255,255,0.22); color: #fff; }
+  .tab-btn.active {
+    background: #f0f4f4;
+    color: #1a5d61;
+    font-weight: 600;
+  }
+
+  /* ── Content ── */
+  .tab-content { display: none; padding: 36px 32px; max-width: 860px; margin: 0 auto; }
+  .tab-content.active { display: block; }
+
+  /* ── Footer ── */
+  .site-footer {
+    background: #1a5d61;
+    color: rgba(255,255,255,0.55);
+    text-align: center;
+    padding: 16px 32px;
+    font-size: 12px;
+    margin-top: 40px;
+  }
+  .site-footer strong { color: rgba(255,255,255,0.85); }
+
+  /* ── Typography ── */
+  h2 { font-size: 23px; font-weight: 600; color: #1a5d61; margin: 0 0 6px; }
+  h3 { font-size: 17px; font-weight: 600; color: #145255; margin: 28px 0 10px; }
+  p  { margin-bottom: 12px; color: #444441; }
+
+  .section-intro {
+    font-size: 16px;
+    color: #5F5E5A;
+    margin-bottom: 24px;
+    border-left: 3px solid #a8d4d6;
+    padding-left: 12px;
+  }
+
+  /* ── Speaker blocks ── */
+  .speaker-block {
+    background: #fff;
+    border-radius: 10px;
+    border: 0.5px solid #d0dede;
+    margin-bottom: 16px;
+    overflow: hidden;
+  }
+  .speaker-label {
+    font-size: 13px;
+    font-weight: 600;
+    text-transform: uppercase;
+    letter-spacing: 0.07em;
+    padding: 8px 16px;
+    background: #e0f0f1;
+    color: #145255;
+  }
+  .speaker-label.gold { background: #FAEEDA; color: #633806; }
+  .speaker-text { padding: 16px 18px; font-size: 16px; color: #2c2c2a; }
+  .speaker-text p { margin-bottom: 10px; }
+  .speaker-text p:last-child { margin-bottom: 0; }
+
+  .note-box {
+    background: #FCEBEB;
+    border-left: 3px solid #E24B4A;
+    border-radius: 0 8px 8px 0;
+    padding: 12px 16px;
+    font-size: 13px;
+    color: #501313;
+    margin-top: 16px;
+  }
+
+  /* ── Bilingual transcription ── */
+  .trans-toggle-bar {
+    display: flex;
+    align-items: center;
+    gap: 10px;
+    margin-bottom: 18px;
+    padding: 10px 14px;
+    background: #e0f0f1;
+    border-radius: 8px;
+    font-size: 14px;
+    color: #145255;
+  }
+  .trans-toggle-bar strong { font-weight: 600; }
+  .lang-switch {
+    display: flex;
+    gap: 4px;
+    margin-left: auto;
+  }
+  .lang-btn {
+    padding: 5px 14px;
+    border-radius: 6px;
+    border: 1.5px solid #a8d4d6;
+    background: #fff;
+    color: #1a5d61;
+    font-size: 13px;
+    font-weight: 600;
+    cursor: pointer;
+    font-family: inherit;
+    transition: all 0.15s;
+  }
+  .lang-btn.active, .lang-btn:hover {
+    background: #1a5d61;
+    color: #fff;
+    border-color: #1a5d61;
+  }
+
+  .speech-line {
+    margin-bottom: 14px;
+  }
+  .speech-line:last-child { margin-bottom: 0; }
+
+  .line-en {
+    font-size: 16px;
+    color: #2c2c2a;
+    line-height: 1.65;
+    padding: 10px 14px;
+    background: #fff;
+    border-radius: 8px 8px 0 0;
+    border: 0.5px solid #d0dede;
+    border-bottom: none;
+  }
+  .line-en em { color: #888; font-style: italic; }
+
+  .line-es {
+    font-size: 15px;
+    color: #145255;
+    line-height: 1.65;
+    padding: 9px 14px;
+    background: #e0f0f1;
+    border-radius: 0 0 8px 8px;
+    border: 0.5px solid #a8d4d6;
+    border-top: 2px dashed #a8d4d6;
+    display: none;
+  }
+  .line-es em { color: #0e6060; font-style: italic; }
+
+  .bilingual-mode .line-es { display: block; }
+  .bilingual-mode .line-en {
+    border-radius: 8px 8px 0 0;
+  }
+
+  .es-only-mode .line-en { display: none; }
+  .es-only-mode .line-es {
+    display: block;
+    border-radius: 8px;
+    border-top: 0.5px solid #a8d4d6;
+    background: #d4ecee;
+    color: #0d3537;
+  }
+
+  .speaker-block { overflow: visible; }
+
+  /* ── Summary bilingual ── */
+  .bilingual-grid {
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+    gap: 16px;
+    margin-bottom: 24px;
+  }
+  @media (max-width: 600px) { .bilingual-grid { grid-template-columns: 1fr; } }
+
+  .lang-card {
+    background: #fff;
+    border-radius: 10px;
+    border: 0.5px solid #d0dede;
+    overflow: hidden;
+  }
+  .lang-card-header {
+    padding: 10px 16px;
+    font-size: 12px;
+    font-weight: 600;
+    text-transform: uppercase;
+    letter-spacing: 0.06em;
+  }
+  .lang-card-header.en { background: #e0f0f1; color: #145255; }
+  .lang-card-header.es { background: #E1F5EE; color: #085041; }
+  .lang-card-body { padding: 16px; font-size: 14px; color: #444441; }
+
+  /* ── Key moments ── */
+  .moment-card {
+    background: #fff;
+    border-radius: 10px;
+    border: 0.5px solid #d0dede;
+    margin-bottom: 16px;
+    overflow: hidden;
+  }
+  .moment-header {
+    padding: 12px 16px;
+    font-size: 15px;
+    font-weight: 600;
+    display: flex;
+    align-items: center;
+    gap: 8px;
+  }
+  .moment-header.red    { background: #FCEBEB; color: #791F1F; }
+  .moment-header.amber  { background: #FAEEDA; color: #633806; }
+  .moment-header.blue   { background: #e0f0f1; color: #145255; }
+  .moment-body { padding: 16px; }
+  .quote-block {
+    background: #f5f4f0;
+    border-left: 3px solid #a8d4d6;
+    border-radius: 0 6px 6px 0;
+    padding: 10px 14px;
+    font-size: 13px;
+    font-style: italic;
+    color: #444441;
+    margin: 10px 0;
+  }
+  .tag {
+    display: inline-block;
+    font-size: 13px;
+    font-weight: 600;
+    padding: 3px 10px;
+    border-radius: 20px;
+    margin-top: 8px;
+  }
+  .tag.tarea    { background: #FAEEDA; color: #633806; }
+  .tag.problema { background: #FCEBEB; color: #791F1F; }
+  .tag.seguridad{ background: #e0f0f1; color: #145255; }
+  .tag.cambio   { background: #E1F5EE; color: #085041; }
+
+  /* ── Phrase cards ── */
+  .phrase-card {
+    background: #fff;
+    border-radius: 10px;
+    border: 0.5px solid #d0dede;
+    margin-bottom: 14px;
+    overflow: hidden;
+  }
+  .phrase-en { padding: 14px 16px 8px; font-size: 17px; font-weight: 600; color: #1a5d61; }
+  .phrase-es { padding: 0 16px 10px; font-size: 15px; color: #0F6E56; font-style: italic; }
+  .phrase-body { border-top: 0.5px solid #eee; padding: 12px 16px; }
+  .phrase-body p { font-size: 15px; margin-bottom: 6px; }
+  .phrase-body p:last-child { margin-bottom: 0; }
+  .phrase-label { font-weight: 600; color: #2c2c2a; }
+  .phrase-example {
+    background: #e0f0f1;
+    border-radius: 6px;
+    padding: 8px 12px;
+    font-size: 13px;
+    color: #0d3537;
+    margin-top: 8px;
+  }
+
+  /* ── Vocab cards ── */
+  .vocab-card {
+    background: #fff;
+    border-radius: 10px;
+    border: 0.5px solid #d0dede;
+    margin-bottom: 12px;
+    overflow: hidden;
+  }
+  .vocab-header {
+    display: flex;
+    align-items: baseline;
+    justify-content: space-between;
+    padding: 12px 16px 6px;
+    flex-wrap: wrap;
+    gap: 4px;
+  }
+  .vocab-word  { font-size: 17px; font-weight: 600; color: #1a5d61; }
+  .vocab-trans { font-size: 15px; color: #0F6E56; font-style: italic; }
+  .vocab-body  { padding: 0 16px 14px; }
+  .vocab-explain { font-size: 15px; color: #444441; margin-bottom: 8px; }
+  .vocab-example {
+    background: #FAEEDA;
+    border-radius: 6px;
+    padding: 8px 12px;
+    font-size: 15px;
+    color: #412402;
+  }
+
+  /* ── Reference guide ── */
+  .ref-table {
+    width: 100%;
+    border-collapse: collapse;
+    font-size: 15px;
+    margin-bottom: 24px;
+  }
+  .ref-table th {
+    background: #1a5d61;
+    color: #fff;
+    padding: 12px 16px;
+    text-align: left;
+    font-weight: 600;
+  }
+  .ref-table th:first-child { border-radius: 8px 0 0 0; }
+  .ref-table th:last-child  { border-radius: 0 8px 0 0; }
+  .ref-table td {
+    padding: 12px 16px;
+    border-bottom: 0.5px solid #d0dede;
+    color: #444441;
+    vertical-align: top;
+  }
+  .ref-table tr:nth-child(even) td { background: #f5f9f9; }
+  .ref-table tr:last-child td { border-bottom: none; }
+  .ref-table td:first-child { font-weight: 500; color: #1a5d61; }
+
+  .listen-list { list-style: none; margin-bottom: 24px; }
+  .listen-list li {
+    background: #fff;
+    border: 0.5px solid #d0dede;
+    border-radius: 8px;
+    padding: 12px 14px 12px 44px;
+    margin-bottom: 8px;
+    font-size: 16px;
+    color: #444441;
+    position: relative;
+  }
+  .listen-list li::before { content: attr(data-icon); position: absolute; left: 14px; font-size: 14px; }
+
+  .signal-grid {
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+    gap: 12px;
+    margin-bottom: 24px;
+  }
+  @media (max-width: 600px) { .signal-grid { grid-template-columns: 1fr; } }
+
+  .signal-card { background: #fff; border-radius: 10px; border: 0.5px solid #d0dede; overflow: hidden; }
+  .signal-card-header { padding: 8px 14px; font-size: 12px; font-weight: 600; }
+  .signal-card-body { padding: 10px 14px; font-size: 14px; color: #5F5E5A; line-height: 1.6; }
+  .signal-card-body span {
+    display: inline-block;
+    background: #f0f4f4;
+    border-radius: 4px;
+    padding: 1px 6px;
+    margin: 2px 2px 2px 0;
+    font-family: monospace;
+    font-size: 12px;
+    color: #2c2c2a;
+  }
+
+  .if-you-hear-row {
+    background: #fff;
+    border: 0.5px solid #d0dede;
+    border-radius: 8px;
+    padding: 14px 16px;
+    margin-bottom: 8px;
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+    gap: 12px;
+    font-size: 15px;
+  }
+  @media (max-width: 600px) { .if-you-hear-row { grid-template-columns: 1fr; } }
+  .iyh-trigger { font-weight: 600; color: #1a5d61; }
+  .iyh-means   { color: #444441; }
+
+  /* ── Final section ── */
+  .final-point {
+    background: #fff;
+    border-radius: 10px;
+    border: 0.5px solid #d0dede;
+    margin-bottom: 14px;
+    overflow: hidden;
+    display: flex;
+  }
+  .final-num {
+    width: 48px;
+    flex-shrink: 0;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    font-size: 20px;
+    font-weight: 700;
+    color: #fff;
+    background: #1a5d61;
+  }
+  .final-num.amber { background: #BA7517; }
+  .final-num.teal  { background: #0F6E56; }
+  .final-body { padding: 14px 16px; }
+  .final-title { font-weight: 600; font-size: 16px; color: #2c2c2a; margin-bottom: 4px; }
+  .final-text  { font-size: 15px; color: #444441; margin: 0; }
+
+  .encouragement {
+    background: #e0f0f1;
+    border-radius: 12px;
+    padding: 24px;
+    text-align: center;
+    margin-top: 28px;
+    border: 0.5px solid #a8d4d6;
+  }
+  .encouragement h3 { color: #1a5d61; margin: 0 0 6px; font-size: 17px; }
+  .encouragement p  { color: #145255; font-size: 14px; margin: 0; }
+
+  /* ── Exercises ── */
+  .exercise-intro {
+    background: #e0f0f1;
+    border-radius: 10px;
+    padding: 16px 20px;
+    margin-bottom: 28px;
+    border: 0.5px solid #a8d4d6;
+  }
+  .exercise-intro p { color: #145255; font-size: 14px; margin: 0; }
+
+  .exercise-block {
+    background: #fff;
+    border-radius: 12px;
+    border: 0.5px solid #d0dede;
+    margin-bottom: 20px;
+    overflow: hidden;
+  }
+  .exercise-header {
+    background: #1a5d61;
+    color: #fff;
+    padding: 12px 18px;
+    display: flex;
+    align-items: center;
+    gap: 10px;
+  }
+  .exercise-num {
+    background: rgba(255,255,255,0.2);
+    border-radius: 6px;
+    padding: 2px 9px;
+    font-size: 12px;
+    font-weight: 700;
+  }
+  .exercise-title { font-size: 16px; font-weight: 600; }
+  .exercise-type {
+    margin-left: auto;
+    font-size: 11px;
+    background: rgba(255,255,255,0.15);
+    border-radius: 20px;
+    padding: 2px 10px;
+    color: rgba(255,255,255,0.85);
+  }
+
+  .exercise-tip {
+    background: #FAEEDA;
+    border-left: 3px solid #BA7517;
+    padding: 10px 16px;
+    font-size: 14px;
+    color: #412402;
+  }
+  .exercise-tip strong { color: #633806; }
+
+  .exercise-body { padding: 18px; }
+  .exercise-body p { font-size: 16px; margin-bottom: 14px; color: #2c2c2a; }
+
+  /* Fill in blank */
+  .blank-sentence {
+    font-size: 17px;
+    line-height: 2;
+    color: #2c2c2a;
+    margin-bottom: 10px;
+  }
+  .blank-input {
+    border: none;
+    border-bottom: 2px solid #1a5d61;
+    background: transparent;
+    font-size: 17px;
+    font-family: inherit;
+    color: #1a5d61;
+    width: 140px;
+    outline: none;
+    padding: 0 4px;
+    text-align: center;
+  }
+  .blank-input.correct { border-color: #1D9E75; color: #085041; background: #e1f5ee; border-radius: 4px; border-bottom-width: 2px; }
+  .blank-input.incorrect { border-color: #E24B4A; color: #791F1F; background: #fcebeb; border-radius: 4px; }
+
+  /* Multiple choice */
+  .mc-question { font-size: 16px; font-weight: 500; color: #2c2c2a; margin-bottom: 12px; }
+  .mc-options { display: flex; flex-direction: column; gap: 8px; margin-bottom: 14px; }
+  .mc-option {
+    display: flex;
+    align-items: flex-start;
+    gap: 10px;
+    padding: 12px 14px;
+    border: 1.5px solid #d0dede;
+    border-radius: 8px;
+    cursor: pointer;
+    font-size: 15px;
+    color: #2c2c2a;
+    transition: border-color 0.15s, background 0.15s;
+    background: #fff;
+  }
+  .mc-option:hover { border-color: #1a5d61; background: #f0f8f8; }
+  .mc-option.selected { border-color: #1a5d61; background: #e0f0f1; }
+  .mc-option.correct  { border-color: #1D9E75; background: #e1f5ee; color: #085041; }
+  .mc-option.incorrect{ border-color: #E24B4A; background: #fcebeb; color: #791F1F; }
+  .mc-option.show-correct { border-color: #1D9E75; background: #e1f5ee; }
+  .mc-circle {
+    width: 20px; height: 20px;
+    border-radius: 50%;
+    border: 2px solid #d0dede;
+    flex-shrink: 0;
+    margin-top: 1px;
+    display: flex; align-items: center; justify-content: center;
+    font-size: 11px;
+    font-weight: 700;
+  }
+  .mc-option.selected .mc-circle  { border-color: #1a5d61; background: #1a5d61; color: #fff; }
+  .mc-option.correct  .mc-circle  { border-color: #1D9E75; background: #1D9E75; color: #fff; }
+  .mc-option.incorrect .mc-circle { border-color: #E24B4A; background: #E24B4A; color: #fff; }
+  .mc-option.show-correct .mc-circle { border-color: #1D9E75; background: #1D9E75; color: #fff; }
+
+  /* Matching */
+  .match-grid {
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+    gap: 10px;
+    margin-bottom: 14px;
+  }
+  @media (max-width: 500px) { .match-grid { grid-template-columns: 1fr; } }
+  .match-col-label { font-size: 11px; font-weight: 700; text-transform: uppercase; letter-spacing: 0.07em; color: #888; margin-bottom: 6px; }
+  .match-item {
+    background: #f5f9f9;
+    border: 1.5px solid #d0dede;
+    border-radius: 8px;
+    padding: 12px 14px;
+    font-size: 15px;
+    cursor: pointer;
+    transition: border-color 0.15s, background 0.15s;
+    color: #2c2c2a;
+    min-height: 44px;
+    display: flex;
+    align-items: center;
+  }
+  .match-item:hover  { border-color: #1a5d61; background: #e0f0f1; }
+  .match-item.selected { border-color: #1a5d61; background: #e0f0f1; font-weight: 600; color: #1a5d61; }
+  .match-item.matched  { border-color: #1D9E75; background: #e1f5ee; color: #085041; }
+  .match-item.wrong    { border-color: #E24B4A; background: #fcebeb; color: #791F1F; }
+
+  /* Buttons */
+  .check-btn {
+    background: #1a5d61;
+    color: #fff;
+    border: none;
+    border-radius: 8px;
+    padding: 11px 22px;
+    font-size: 15px;
+    font-weight: 600;
+    cursor: pointer;
+    font-family: inherit;
+    transition: background 0.15s;
+    margin-right: 8px;
+  }
+  .check-btn:hover { background: #145255; }
+  .check-btn:disabled { background: #a8d4d6; cursor: default; }
+
+  .reset-btn {
+    background: transparent;
+    color: #1a5d61;
+    border: 1.5px solid #a8d4d6;
+    border-radius: 8px;
+    padding: 10px 20px;
+    font-size: 15px;
+    font-weight: 500;
+    cursor: pointer;
+    font-family: inherit;
+    transition: background 0.15s;
+  }
+  .reset-btn:hover { background: #e0f0f1; }
+
+  .feedback-msg {
+    margin-top: 12px;
+    padding: 12px 16px;
+    border-radius: 8px;
+    font-size: 15px;
+    font-weight: 500;
+    display: none;
+  }
+  .feedback-msg.correct   { background: #e1f5ee; color: #085041; border: 1px solid #9FE1CB; display: block; }
+  .feedback-msg.incorrect { background: #fcebeb; color: #791F1F; border: 1px solid #F7C1C1; display: block; }
+  .feedback-msg.partial   { background: #FAEEDA; color: #412402; border: 1px solid #FAC775; display: block; }
+
+  .hint-box {
+    margin-top: 10px;
+    padding: 12px 16px;
+    border-radius: 8px;
+    font-size: 15px;
+    background: #f0f4f4;
+    border-left: 3px solid #1a5d61;
+    color: #2c2c2a;
+    display: none;
+  }
+  .hint-box.visible { display: block; }
+  .hint-toggle {
+    background: transparent;
+    border: none;
+    color: #1a5d61;
+    font-size: 14px;
+    cursor: pointer;
+    padding: 6px 0;
+    font-family: inherit;
+    text-decoration: underline;
+    display: none;
+  }
+  .hint-toggle.visible { display: inline-block; }
+
+  .progress-bar-wrap { background: #e0f0f1; border-radius: 999px; height: 6px; margin-bottom: 20px; }
+  .progress-bar-fill { height: 100%; background: #1a5d61; border-radius: 999px; transition: width 0.4s ease; }
+  .progress-label { font-size: 12px; color: #5F5E5A; margin-bottom: 6px; }
+
+  .score-summary {
+    background: #e0f0f1;
+    border-radius: 10px;
+    padding: 16px 20px;
+    text-align: center;
+    margin-top: 24px;
+    border: 0.5px solid #a8d4d6;
+    display: none;
+  }
+  .score-summary.visible { display: block; }
+  .score-big { font-size: 36px; font-weight: 700; color: #1a5d61; }
+  .score-label { font-size: 14px; color: #145255; }
+
+  /* ══════════════════════════════════════
+     RESPONSIVE — MOBILE FIRST
+  ══════════════════════════════════════ */
+
+  @media (max-width: 700px) {
+
+    body { font-size: 15px; padding: 0; }
+
+    /* Header */
+    .site-header { padding: 16px 16px 0; }
+    .header-logo { width: 54px; height: 54px; }
+    .header-title { font-size: 18px; }
+    .header-academy { font-size: 10px; }
+    .header-subtitle { font-size: 11px; }
+
+    /* Tab bar */
+    .tab-bar { gap: 2px; padding: 0 4px; }
+    .tab-btn { padding: 8px 10px; font-size: 12px; }
+
+    /* Content area */
+    .tab-content { display: none; padding: 20px 16px; }
+    .tab-content.active { display: block; }
+
+    /* Headings */
+    h2 { font-size: 19px; }
+    h3 { font-size: 15px; }
+    .section-intro { font-size: 14px; }
+
+    /* Bilingual toggle bar */
+    .trans-toggle-bar {
+      flex-direction: column;
+      align-items: flex-start;
+      gap: 8px;
+    }
+    .lang-switch { margin-left: 0; width: 100%; justify-content: flex-start; }
+    .lang-btn { flex: 1; text-align: center; font-size: 12px; padding: 7px 6px; }
+
+    /* Speaker blocks */
+    .speaker-label { font-size: 12px; padding: 8px 12px; }
+    .speaker-text { padding: 12px 14px; }
+    .line-en, .line-es { font-size: 14px; padding: 10px 12px; }
+
+    /* Summary bilingual grid */
+    .bilingual-grid { grid-template-columns: 1fr; gap: 12px; }
+
+    /* Signal grid */
+    .signal-grid { grid-template-columns: 1fr; }
+
+    /* If-you-hear rows */
+    .if-you-hear-row { grid-template-columns: 1fr; gap: 6px; }
+    .if-you-hear-row > div:first-child {
+      padding-bottom: 6px;
+      border-bottom: 0.5px solid #d0dede;
+    }
+
+    /* Vocab cards */
+    .vocab-header { flex-direction: column; align-items: flex-start; gap: 2px; }
+    .vocab-word { font-size: 15px; }
+    .vocab-trans { font-size: 14px; }
+    .vocab-explain, .vocab-example { font-size: 14px; }
+
+    /* Phrase cards */
+    .phrase-en { font-size: 15px; }
+    .phrase-es { font-size: 14px; }
+    .phrase-body p { font-size: 14px; }
+
+    /* Reference table — make it scrollable */
+    .ref-table-wrap {
+      overflow-x: auto;
+      -webkit-overflow-scrolling: touch;
+      border-radius: 8px;
+      margin-bottom: 24px;
+    }
+    .ref-table { font-size: 13px; min-width: 500px; }
+    .ref-table th, .ref-table td { padding: 10px 12px; }
+
+    /* Exercises */
+    .exercise-header { flex-wrap: wrap; gap: 6px; }
+    .exercise-type { margin-left: 0; }
+    .exercise-body { padding: 14px; }
+    .exercise-body p { font-size: 15px; }
+    .blank-sentence { font-size: 15px; line-height: 2.2; }
+    .blank-input { width: 110px; font-size: 15px; }
+    .mc-question { font-size: 15px; }
+    .mc-option { font-size: 14px; padding: 11px 12px; }
+    .match-grid { grid-template-columns: 1fr; }
+    .match-item { font-size: 14px; }
+    .check-btn { padding: 11px 18px; font-size: 14px; }
+    .reset-btn { padding: 9px 16px; font-size: 14px; }
+    .feedback-msg { font-size: 14px; }
+    .hint-box { font-size: 14px; }
+    .hint-toggle { font-size: 13px; }
+
+    /* True/False buttons */
+    .tf-item { margin-bottom: 16px; }
+
+    /* Key moments */
+    .moment-header { font-size: 14px; flex-wrap: wrap; }
+    .moment-body p { font-size: 14px; }
+    .quote-block { font-size: 14px; }
+
+    /* Final section */
+    .final-point { flex-direction: row; }
+    .final-num { width: 44px; font-size: 18px; }
+    .final-title { font-size: 15px; }
+    .final-text { font-size: 14px; }
+
+    /* Listen list */
+    .listen-list li { font-size: 14px; padding: 10px 12px 10px 38px; }
+
+    /* Note box */
+    .note-box { font-size: 13px; }
+
+    /* Footer */
+    .site-footer { font-size: 11px; padding: 14px 16px; }
+
+    /* Score summary */
+    .score-big { font-size: 28px; }
+    .score-label { font-size: 13px; }
+
+    /* Progress bar label */
+    .progress-label { font-size: 11px; }
+  }
+
+  /* Slightly larger phones / small tablets */
+  @media (min-width: 701px) and (max-width: 900px) {
+    .tab-content { display: none; padding: 28px 24px; }
+    .tab-content.active { display: block; }
+    .bilingual-grid { grid-template-columns: 1fr; }
+    .ref-table { font-size: 14px; }
+    .ref-table-wrap { overflow-x: auto; -webkit-overflow-scrolling: touch; }
+  }
+
+</style>
+</head>
+<body>
+
+<div class="site-header">
+  <div class="header-top">
+    <img class="header-logo" src="logo.png" alt="Your English Buddy logo">
+    <div class="header-text">
+      <div class="header-academy">Your English Buddy</div>
+      <div class="header-title">🎧 English for Warehouse Update Meetings</div>
+      <div class="header-subtitle">Study guide · Mariannys · Intermediate-Basic level</div>
+    </div>
+  </div>
+  <nav class="tab-bar" role="tablist">
+    <button class="tab-btn active"  onclick="showTab('transcription',this)">📝 Transcription</button>
+    <button class="tab-btn"         onclick="showTab('summary',this)">📋 Summary</button>
+    <button class="tab-btn"         onclick="showTab('key-moments',this)">🔑 Key Moments</button>
+    <button class="tab-btn"         onclick="showTab('phrases',this)">💬 Useful Phrases</button>
+    <button class="tab-btn"         onclick="showTab('vocabulary',this)">📚 Vocabulary</button>
+    <button class="tab-btn"         onclick="showTab('reference',this)">🗺️ Reference Guide</button>
+    <button class="tab-btn"         onclick="showTab('exercises',this)">✏️ Exercises</button>
+    <button class="tab-btn"         onclick="showTab('most-important',this)">⭐ Most Important</button>
+  </nav>
+</div>
+
+<!-- ══════════════════════════════════════════
+     TAB 1 · TRANSCRIPTION
+══════════════════════════════════════════ -->
+<div id="tab-transcription" class="tab-content active">
+  <h2>📝 Meeting Transcription</h2>
+  <p class="section-intro">This is the transcription of your real meeting recording. Parts in brackets [ ] are clarifications or corrections from the audio.</p>
+
+  <div class="trans-toggle-bar">
+    <strong>View mode:</strong>
+    <div class="lang-switch">
+      <button class="lang-btn active" onclick="setTransMode('en',this)">🇺🇸 English only</button>
+      <button class="lang-btn" onclick="setTransMode('bilingual',this)">🇺🇸+🇪🇸 Bilingual</button>
+      <button class="lang-btn" onclick="setTransMode('es',this)">🇪🇸 Spanish only</button>
+    </div>
+  </div>
+
+  <div id="transcript-body">
+
+  <div class="speaker-block">
+    <div class="speaker-label">🎙️ Speaker 1 — Supervisor / Lead · Part 1: Productivity update</div>
+    <div class="speaker-text">
+      <div class="speech-line">
+        <div class="line-en">"Really good job. We still got over 700 seats in the back too."</div>
+        <div class="line-es">"Muy buen trabajo. Todavía tenemos más de 700 unidades en la parte de atrás."</div>
+      </div>
+      <div class="speech-line">
+        <div class="line-en">"Same thing today — not as heavy to start out, but everyone will start in Virginia. Return transport till 8:00. Get back on that schedule and then I'll get out to you if I have any questions."</div>
+        <div class="line-es">"Lo mismo hoy — no tan ocupado al principio, pero todos van a empezar en el área de Virginia. Devoluciones hasta las 8:00. Volvemos a ese horario y luego me comunico con ustedes si tengo preguntas."</div>
+      </div>
+    </div>
+  </div>
+
+  <div class="speaker-block">
+    <div class="speaker-label">🎙️ Speaker 1 — Supervisor / Lead · Part 2: Inventory &amp; blinds</div>
+    <div class="speaker-text">
+      <div class="speech-line">
+        <div class="line-en">"One thing — when you go through and reconciling blinds... so far I'm still missing two, but I found everything that was put on blind."</div>
+        <div class="line-es">"Una cosa — cuando estén revisando y cuadrando los artículos sin ubicación (blinds)... hasta ahora me faltan dos, pero encontré todo lo que estaba marcado como blind."</div>
+      </div>
+      <div class="speech-line">
+        <div class="line-en">"Just make sure that if something gives you the red — if it's something that you can't fix yourself — go to the lead, go to me, come to Cisco. Don't just put it somewhere."</div>
+        <div class="line-es">"Asegúrense de que si el escáner les da el rojo — si es algo que no pueden arreglar solos — vayan con el lead, vengan conmigo, háblale a Cisco. No lo pongan en cualquier lugar."</div>
+      </div>
+      <div class="speech-line">
+        <div class="line-en">"Make sure that if the gun doesn't allow you to do it how it's supposed to, that means there's something wrong — and it's okay, it happens. Just make sure that you let somebody know, so that we can keep the inventory like it's supposed to be."</div>
+        <div class="line-es">"Si la pistola no les permite hacerlo como debe ser, significa que hay un problema — y está bien, pasa. Solo asegúrense de avisarle a alguien, para que podamos mantener el inventario como debe estar."</div>
+      </div>
+    </div>
+  </div>
+
+  <div class="speaker-block">
+    <div class="speaker-label">🎙️ Speaker 1 — Supervisor / Lead · Part 3: Dock checklist</div>
+    <div class="speaker-text">
+      <div class="speech-line">
+        <div class="line-en">"I got one thing — I just got on the dock at [1:31], and the dock checklist wasn't filled out. It's already Wednesday. I know it was used yesterday and Monday — so please, please, please make sure you're filling it out."</div>
+        <div class="line-es">"Tengo una cosa — acabo de llegar al muelle a [la 1:31] y el checklist del muelle no estaba llenado. Ya es miércoles. Sé que se usó ayer y el lunes — así que por favor, por favor, por favor asegúrense de llenarlo."</div>
+      </div>
+    </div>
+  </div>
+
+  <div class="speaker-block">
+    <div class="speaker-label gold">🎙️ Speaker 2 — Senior Manager · Part 1: Greeting &amp; breakfast</div>
+    <div class="speaker-text">
+      <div class="speech-line">
+        <div class="line-en">"Good morning, everyone."</div>
+        <div class="line-es">"Buenos días a todos."</div>
+      </div>
+      <div class="speech-line">
+        <div class="line-en"><em>[Group responds:]</em> "Good morning."</div>
+        <div class="line-es"><em>[El grupo responde:]</em> "Buenos días."</div>
+      </div>
+      <div class="speech-line">
+        <div class="line-en">"I was gonna try to make breakfast this morning but I have a full schedule. So see what I can do — maybe I can get out there and have breakfast with you guys on the first break. Not today, maybe tomorrow. But I've got a lot going on for the rest of the week, so we'll see how it goes."</div>
+        <div class="line-es">"Iba a tratar de traer desayuno esta mañana pero tengo la agenda llena. Voy a ver qué puedo hacer — quizás pueda salir a desayunar con ustedes en el primer descanso. Hoy no, quizás mañana. Pero tengo mucho por hacer el resto de la semana, así que ya veremos cómo sale."</div>
+      </div>
+    </div>
+  </div>
+
+  <div class="speaker-block">
+    <div class="speaker-label gold">🎙️ Speaker 2 — Senior Manager · Part 2: Patio rules &amp; smoking area</div>
+    <div class="speaker-text">
+      <div class="speech-line">
+        <div class="line-en">"Alright, so going out the patio — you can go out there and you can eat, but that is NOT an exit. We should all be scanning in — back in the front door, and back out when you leave. Come in the front door, leave out the front door. Do NOT go out the patio."</div>
+        <div class="line-es">"Bien, sobre salir al patio — pueden salir y comer ahí, pero eso NO es una salida. Todos debemos escanear — entrar por la puerta principal, y salir por la puerta principal cuando se vayan. Entren por la puerta principal, salgan por la puerta principal. NO salgan por el patio."</div>
+      </div>
+      <div class="speech-line">
+        <div class="line-en">"Second thing with the patio — do NOT go out there and smoke. There's a dedicated smoking area down the side of the building. You go out the east side if you've got to smoke. That's actually not an exit, so go out the front door, walk around, take a smoke break, go to your car."</div>
+        <div class="line-es">"Segunda cosa con el patio — NO salgan ahí a fumar. Hay un área de fumadores designada al lado del edificio. Si necesitan fumar, salen por el lado este. Eso tampoco es una salida, así que salgan por la puerta principal, den la vuelta, tomen su descanso para fumar, vayan a su carro."</div>
+      </div>
+      <div class="speech-line">
+        <div class="line-en">"Everybody got that?"</div>
+        <div class="line-es">"¿Todos entendieron?"</div>
+      </div>
+    </div>
+  </div>
+
+  <div class="speaker-block">
+    <div class="speaker-label gold">🎙️ Speaker 2 — Senior Manager · Part 3: Tools &amp; air compressor</div>
+    <div class="speaker-text">
+      <div class="speech-line">
+        <div class="line-en">"The other thing — we are going through 2 million safety knives and about 3 million tape guns every week. So think about putting staple guns at the back of the shipping desk. You have a staple gun — it's quicker. You don't have to worry about going around past the tape gun and taking it off."</div>
+        <div class="line-es">"La otra cosa — estamos usando dos millones de cuchillos de seguridad y como tres millones de pistolas de cinta cada semana. Así que piensen en poner grapadoras en la parte de atrás del escritorio de envíos. Con la grapadora es más rápido. No tienen que preocuparse por rodear la pistola de cinta y quitársela."</div>
+      </div>
+      <div class="speech-line">
+        <div class="line-en">"I know the single gun reaches to where you can do our uppers."</div>
+        <div class="line-es">"Sé que la pistola sola llega hasta donde pueden hacer los estantes de arriba."</div>
+      </div>
+      <div class="speech-line">
+        <div class="line-en">"The air compressor got a hole, so we had to take it to the shop. We found one because we tried to fix it — it's broken. We have to order [a new one]. I don't know how we're gonna do without them — they are expensive. I don't want to buy them if we've got [another solution], so... would y'all want them?"</div>
+        <div class="line-es">"El compresor de aire tiene un hoyo, así que tuvimos que llevarlo al taller. Encontramos el problema porque intentamos arreglarlo — está roto. Tenemos que pedir [uno nuevo]. No sé cómo vamos a hacer sin ellos — son caros. No quiero comprarlo si tenemos [otra solución], entonces... ¿lo querrían ustedes?"</div>
+      </div>
+    </div>
+  </div>
+
+  </div><!-- end transcript-body -->
+
+  <div class="note-box">
+    ⚠️ <strong>Note:</strong> The last lines in the CapCut file ("please repeat the sentence...") were generated automatically by the app — they are NOT part of the meeting. Completely ignored.
+  </div>
+</div>
+
+<!-- ══════════════════════════════════════════
+     TAB 2 · SUMMARY
+══════════════════════════════════════════ -->
+<div id="tab-summary" class="tab-content">
+  <h2>📋 Meeting Summary</h2>
+  <p class="section-intro">A short summary of what happened — first in simple English, then in Spanish.</p>
+
+  <div class="bilingual-grid">
+    <div class="lang-card">
+      <div class="lang-card-header en">🇺🇸 In English — simple version</div>
+      <div class="lang-card-body">
+        <p>This was a morning team meeting at a warehouse. Two supervisors spoke to the group.</p>
+        <p>The first supervisor said the team did a good job. He talked about inventory — some items called "blinds" were missing, and workers need to report problems with their scan guns instead of ignoring them. He also reminded everyone to fill out the dock checklist every day.</p>
+        <p>The second supervisor greeted the team and mentioned he wanted to bring breakfast but was too busy. He explained the patio rules (not an exit, no smoking there), announced a tool change (staple guns instead of tape guns), and said the air compressor is broken and needs to be replaced.</p>
+      </div>
+    </div>
+    <div class="lang-card">
+      <div class="lang-card-header es">🇪🇸 En español</div>
+      <div class="lang-card-body">
+        <p>Esta fue una reunión matutina del equipo en un warehouse. Hablaron dos supervisores.</p>
+        <p>El primer supervisor felicitó al equipo. Habló del inventario — faltaban artículos llamados "blinds" y los trabajadores deben reportar errores del escáner en lugar de ignorarlos. También recordó llenar el checklist del muelle todos los días.</p>
+        <p>El segundo supervisor saludó al equipo y quería traer desayuno pero estaba ocupado. Explicó las reglas del patio (no es salida, no fumar ahí), anunció un cambio de herramientas (grapadora en vez de pistola de cinta), y dijo que el compresor está roto y hay que pedir uno nuevo.</p>
+      </div>
+    </div>
+  </div>
+
+  <h3>📌 Main topics covered</h3>
+  <div class="ref-table-wrap"><table class="ref-table">
+    <thead><tr><th>Topic</th><th>What was said</th></tr></thead>
+    <tbody>
+      <tr><td>✅ Productivity</td><td>Good job yesterday. Over 700 seats still in the back.</td></tr>
+      <tr><td>📦 Inventory</td><td>2 "blinds" missing. If scanner gives the red, report to the lead.</td></tr>
+      <tr><td>📋 Checklist</td><td>Dock checklist not filled since Monday. It's mandatory every day.</td></tr>
+      <tr><td>🚪 Safety</td><td>Patio is not an exit. No smoking there. Always use the front door.</td></tr>
+      <tr><td>🔧 Tools</td><td>Too many tape guns being used. Switch to staple gun at shipping desk.</td></tr>
+      <tr><td>💥 Equipment</td><td>Air compressor has a hole. It's at the shop. A new one must be ordered.</td></tr>
+    </tbody>
+  </table>
+</div>
+
+</div><!-- end tab-summary -->
+
+<!-- ══════════════════════════════════════════
+     TAB 3 · KEY MOMENTS
+══════════════════════════════════════════ -->
+<div id="tab-key-moments" class="tab-content">
+  <h2>🔑 Key Moments of the Meeting</h2>
+  <p class="section-intro">These are the most important moments. If you hear these kinds of things in a meeting, pay close attention.</p>
+
+  <div class="moment-card">
+    <div class="moment-header red">🔴 Moment 1 — Report scanner errors</div>
+    <div class="moment-body">
+      <div class="quote-block">"If the gun doesn't allow you to do it how it's supposed to — go to the lead, go to me, come to Cisco. Don't just put it somewhere."</div>
+      <p><strong>Why it's important:</strong> This is a direct instruction. If your scan gun doesn't work correctly, don't ignore it or try to fix it alone. Go to the lead or supervisor. An unreported error can damage the entire warehouse inventory.</p>
+      <span class="tag problema">Problem / Instruction</span>
+    </div>
+  </div>
+
+  <div class="moment-card">
+    <div class="moment-header red">🔴 Moment 2 — Missing inventory items (blinds)</div>
+    <div class="moment-body">
+      <div class="quote-block">"I'm still missing two, but I found everything that was put on blind."</div>
+      <p><strong>Why it's important:</strong> The supervisor is comparing the system against what's physically in the warehouse. If items in your area weren't scanned or placed incorrectly, it creates problems for the whole team.</p>
+      <span class="tag problema">Inventory problem</span>
+    </div>
+  </div>
+
+  <div class="moment-card">
+    <div class="moment-header amber">🟡 Moment 3 — Dock checklist not filled</div>
+    <div class="moment-body">
+      <div class="quote-block">"The dock checklist wasn't filled out. It's already Wednesday. Please, please, please make sure you're filling it out."</div>
+      <p><strong>Why it's important:</strong> The dock checklist is mandatory every time that area is used. It was already Wednesday and hadn't been filled since Monday. When a supervisor repeats "please" three times, the issue is serious and has happened before.</p>
+      <span class="tag tarea">Urgent task</span>
+    </div>
+  </div>
+
+  <div class="moment-card">
+    <div class="moment-header blue">🔵 Moment 4 — Patio rules &amp; smoking area</div>
+    <div class="moment-body">
+      <div class="quote-block">"That is NOT an exit. Come in the front door, leave out the front door. Do NOT go out there and smoke."</div>
+      <p><strong>Why it's important:</strong> Leaving through the patio doesn't register your entry/exit correctly — a safety and compliance issue. Smoking there is also prohibited. There is a specific area on the east side of the building.</p>
+      <span class="tag seguridad">Safety rule</span>
+    </div>
+  </div>
+
+  <div class="moment-card">
+    <div class="moment-header amber">🟡 Moment 5 — Tool change: tape gun → staple gun</div>
+    <div class="moment-body">
+      <div class="quote-block">"Think about putting staple guns at the back of the shipping desk. You have a staple gun — it's quicker."</div>
+      <p><strong>Why it's important:</strong> Too many tape guns are being lost or worn out. The manager is suggesting a change for efficiency. This kind of announcement affects how you do your work that day.</p>
+      <span class="tag cambio">Procedure change</span>
+    </div>
+  </div>
+
+  <div class="moment-card">
+    <div class="moment-header red">🔴 Moment 6 — Broken air compressor</div>
+    <div class="moment-body">
+      <div class="quote-block">"The air compressor got a hole — we had to take it to the shop. We have to order a new one."</div>
+      <p><strong>Why it's important:</strong> An expensive piece of equipment is out of service. This can affect certain tasks that day. Useful info to understand why something is not available normally.</p>
+      <span class="tag problema">Equipment problem</span>
+    </div>
+  </div>
+</div>
+
+<!-- ══════════════════════════════════════════
+     TAB 4 · USEFUL PHRASES
+══════════════════════════════════════════ -->
+<div id="tab-phrases" class="tab-content">
+  <h2>💬 Most Useful Phrases from This Meeting</h2>
+  <p class="section-intro">These phrases came from the real recording. Learn them well — you will hear them many times at work.</p>
+
+  <div class="phrase-card">
+    <div class="phrase-en">"Really good job"</div>
+    <div class="phrase-es">Muy buen trabajo</div>
+    <div class="phrase-body">
+      <p><span class="phrase-label">In context:</span> The supervisor compliments the team at the start of the meeting. It signals that yesterday's work was good.</p>
+      <p><span class="phrase-label">When you'll hear it:</span> At the beginning of meetings, especially after a productive day.</p>
+      <div class="phrase-example">💡 "Really good job yesterday — the numbers were great."</div>
+    </div>
+  </div>
+
+  <div class="phrase-card">
+    <div class="phrase-en">"Not as heavy to start out"</div>
+    <div class="phrase-es">No tan ocupado al principio</div>
+    <div class="phrase-body">
+      <p><span class="phrase-label">In context:</span> "Heavy" in warehouse = lots of work/orders. They're saying the day will start slow.</p>
+      <p><span class="phrase-label">When you'll hear it:</span> When the supervisor gives the day's workload forecast.</p>
+      <div class="phrase-example">💡 "It's not as heavy today, so take your time on the floor."</div>
+    </div>
+  </div>
+
+  <div class="phrase-card">
+    <div class="phrase-en">"Go to the lead"</div>
+    <div class="phrase-es">Ve con el líder / encargado</div>
+    <div class="phrase-body">
+      <p><span class="phrase-label">In context:</span> The "lead" is the person in charge on the floor during your shift. When there's a problem you can't solve alone, you report to the lead.</p>
+      <p><span class="phrase-label">When you'll hear it:</span> Almost every time they talk about solving problems or errors.</p>
+      <div class="phrase-example">💡 "If you're not sure, go to the lead — don't guess."</div>
+    </div>
+  </div>
+
+  <div class="phrase-card">
+    <div class="phrase-en">"Don't just put it somewhere"</div>
+    <div class="phrase-es">No lo pongas en cualquier lugar</div>
+    <div class="phrase-body">
+      <p><span class="phrase-label">In context:</span> Instruction not to place items without properly registering them. A warning about inventory disorder.</p>
+      <p><span class="phrase-label">When you'll hear it:</span> When they talk about inventory or merchandise handling.</p>
+      <div class="phrase-example">💡 "If you find something on the floor, don't just put it somewhere — scan it first."</div>
+    </div>
+  </div>
+
+  <div class="phrase-card">
+    <div class="phrase-en">"Let somebody know"</div>
+    <div class="phrase-es">Avísale a alguien</div>
+    <div class="phrase-body">
+      <p><span class="phrase-label">In context:</span> One of the most important phrases in warehouse work. It means you should never stay silent if something is wrong. Always communicate problems.</p>
+      <p><span class="phrase-label">When you'll hear it:</span> In almost every meeting. One of the most common instructions.</p>
+      <div class="phrase-example">💡 "If the scanner goes down, let somebody know right away."</div>
+    </div>
+  </div>
+
+  <div class="phrase-card">
+    <div class="phrase-en">"Please make sure you're filling it out"</div>
+    <div class="phrase-es">Por favor asegúrate de llenarlo</div>
+    <div class="phrase-body">
+      <p><span class="phrase-label">In context:</span> Urgent reminder to complete a form or checklist. When "please" is repeated several times, a problem already happened before.</p>
+      <p><span class="phrase-label">When you'll hear it:</span> When documents or forms are not being completed.</p>
+      <div class="phrase-example">💡 "Please make sure you're filling out the timesheet before you leave."</div>
+    </div>
+  </div>
+
+  <div class="phrase-card">
+    <div class="phrase-en">"That is not an exit"</div>
+    <div class="phrase-es">Eso no es una salida</div>
+    <div class="phrase-body">
+      <p><span class="phrase-label">In context:</span> Safety rule. You must always use the official entry/exit so your scan in and out is recorded correctly.</p>
+      <p><span class="phrase-label">When you'll hear it:</span> During safety briefings or when someone used the wrong door.</p>
+      <div class="phrase-example">💡 "The back door is not an exit — always use the front entrance."</div>
+    </div>
+  </div>
+
+  <div class="phrase-card">
+    <div class="phrase-en">"We'll see how it goes"</div>
+    <div class="phrase-es">Ya veremos cómo sale</div>
+    <div class="phrase-body">
+      <p><span class="phrase-label">In context:</span> Informal phrase meaning no definitive answer yet. The manager isn't promising something, but isn't ruling it out either.</p>
+      <p><span class="phrase-label">When you'll hear it:</span> When the supervisor can't confirm something yet — overtime, schedule changes, etc.</p>
+      <div class="phrase-example">💡 "We might do overtime Friday — we'll see how it goes."</div>
+    </div>
+  </div>
+
+  <div class="phrase-card">
+    <div class="phrase-en">"Everybody got that?"</div>
+    <div class="phrase-es">¿Todos entendieron?</div>
+    <div class="phrase-body">
+      <p><span class="phrase-label">In context:</span> The supervisor checks that everyone heard and understood. This is the moment to ask if you didn't understand something.</p>
+      <p><span class="phrase-label">When you'll hear it:</span> After an important instruction, especially a safety one.</p>
+      <div class="phrase-example">💡 "Come in through the front door only — everybody got that?"</div>
+    </div>
+  </div>
+</div>
+
+<!-- ══════════════════════════════════════════
+     TAB 5 · VOCABULARY
+══════════════════════════════════════════ -->
+<div id="tab-vocabulary" class="tab-content">
+  <h2>📚 Important Vocabulary from This Meeting</h2>
+  <p class="section-intro">Real words and expressions from the recording. Know these and you won't feel lost when you hear them.</p>
+
+  <div class="vocab-card">
+    <div class="vocab-header"><span class="vocab-word">Blind / Blinds</span><span class="vocab-trans">Artículo sin ubicación asignada</span></div>
+    <div class="vocab-body">
+      <p class="vocab-explain">In a warehouse, a "blind" is an item that is in the system but doesn't have a confirmed location. "Reconciling blinds" = verifying and assigning those items correctly.</p>
+      <div class="vocab-example">🏭 "I found a blind in aisle 4 — I need to assign it a location."</div>
+    </div>
+  </div>
+
+  <div class="vocab-card">
+    <div class="vocab-header"><span class="vocab-word">Reconciling</span><span class="vocab-trans">Reconciliar / Cuadrar el inventario</span></div>
+    <div class="vocab-body">
+      <p class="vocab-explain">Comparing what the computer system says with what is physically in the warehouse. If the numbers don't match, there's a problem.</p>
+      <div class="vocab-example">🏭 "We're reconciling the inventory at the end of the shift."</div>
+    </div>
+  </div>
+
+  <div class="vocab-card">
+    <div class="vocab-header"><span class="vocab-word">The gun / Scan gun</span><span class="vocab-trans">La pistola / El escáner</span></div>
+    <div class="vocab-body">
+      <p class="vocab-explain">The barcode reader gun. "The gun gives you the red" = the scanner shows an error (red screen = something is wrong).</p>
+      <div class="vocab-example">🏭 "My gun is giving me the red — I can't scan this item."</div>
+    </div>
+  </div>
+
+  <div class="vocab-card">
+    <div class="vocab-header"><span class="vocab-word">The red</span><span class="vocab-trans">El rojo / Error del escáner</span></div>
+    <div class="vocab-body">
+      <p class="vocab-explain">When the scanner shows a red screen, there's an error. The item might be in the wrong place or there's a system issue. Never ignore it.</p>
+      <div class="vocab-example">🏭 "If you get the red, stop and tell the lead right away."</div>
+    </div>
+  </div>
+
+  <div class="vocab-card">
+    <div class="vocab-header"><span class="vocab-word">The lead</span><span class="vocab-trans">El líder / El encargado del turno</span></div>
+    <div class="vocab-body">
+      <p class="vocab-explain">The person responsible for the floor during your shift. Not the main manager, but the first person you report a problem to.</p>
+      <div class="vocab-example">🏭 "Ask the lead if you're not sure where to put that pallet."</div>
+    </div>
+  </div>
+
+  <div class="vocab-card">
+    <div class="vocab-header"><span class="vocab-word">Dock checklist</span><span class="vocab-trans">Lista de verificación del muelle</span></div>
+    <div class="vocab-body">
+      <p class="vocab-explain">A mandatory form that must be completed every time the dock area is used. Documents that everything was in order. Not optional.</p>
+      <div class="vocab-example">🏭 "Don't forget to sign the dock checklist after receiving the shipment."</div>
+    </div>
+  </div>
+
+  <div class="vocab-card">
+    <div class="vocab-header"><span class="vocab-word">Scanning in / out</span><span class="vocab-trans">Escanear al entrar y salir</span></div>
+    <div class="vocab-body">
+      <p class="vocab-explain">The process of registering your entry and exit using a scanner at the correct door. Important for safety and keeping accurate records.</p>
+      <div class="vocab-example">🏭 "Make sure you're scanning in through the front door every morning."</div>
+    </div>
+  </div>
+
+  <div class="vocab-card">
+    <div class="vocab-header"><span class="vocab-word">Dedicated smoking area</span><span class="vocab-trans">Área de fumadores designada</span></div>
+    <div class="vocab-body">
+      <p class="vocab-explain">The only place where smoking is allowed. At this warehouse it's on the east side of the building. No smoking anywhere else.</p>
+      <div class="vocab-example">🏭 "The dedicated smoking area is on the east side of the building."</div>
+    </div>
+  </div>
+
+  <div class="vocab-card">
+    <div class="vocab-header"><span class="vocab-word">Safety knife</span><span class="vocab-trans">Cuchillo de seguridad</span></div>
+    <div class="vocab-body">
+      <p class="vocab-explain">A box-cutting tool designed not to cut skin. Very common in warehouses. The meeting mentioned too many are being used/lost.</p>
+      <div class="vocab-example">🏭 "Always use the safety knife to open boxes — never a regular blade."</div>
+    </div>
+  </div>
+
+  <div class="vocab-card">
+    <div class="vocab-header"><span class="vocab-word">Tape gun</span><span class="vocab-trans">Pistola de cinta adhesiva</span></div>
+    <div class="vocab-body">
+      <p class="vocab-explain">Tool for applying tape to seal boxes before shipping. The meeting said too many are being used and lost each week.</p>
+      <div class="vocab-example">🏭 "The tape gun is out of tape — grab a new roll from the supply room."</div>
+    </div>
+  </div>
+
+  <div class="vocab-card">
+    <div class="vocab-header"><span class="vocab-word">Staple gun</span><span class="vocab-trans">Grapadora industrial</span></div>
+    <div class="vocab-body">
+      <p class="vocab-explain">A tool that uses staples to secure boxes. The manager suggested using it instead of the tape gun because it's faster.</p>
+      <div class="vocab-example">🏭 "Use the staple gun on the heavy boxes — it's faster and more secure."</div>
+    </div>
+  </div>
+
+  <div class="vocab-card">
+    <div class="vocab-header"><span class="vocab-word">Air compressor</span><span class="vocab-trans">Compresor de aire</span></div>
+    <div class="vocab-body">
+      <p class="vocab-explain">Machine that generates compressed air for pneumatic tools. If it breaks, certain tools don't work. This warehouse's compressor has a hole and is at the shop.</p>
+      <div class="vocab-example">🏭 "The air compressor is broken, so we can't use the nail gun today."</div>
+    </div>
+  </div>
+
+  <div class="vocab-card">
+    <div class="vocab-header"><span class="vocab-word">Return transport</span><span class="vocab-trans">Área / turno de devoluciones</span></div>
+    <div class="vocab-body">
+      <p class="vocab-explain">The process or area dedicated to handling items coming back (returns). In the meeting, everyone was assigned there until 8:00.</p>
+      <div class="vocab-example">🏭 "You're on return transport until 8 — after that, go to your regular station."</div>
+    </div>
+  </div>
+
+  <div class="vocab-card">
+    <div class="vocab-header"><span class="vocab-word">Uppers</span><span class="vocab-trans">Posiciones altas del estante</span></div>
+    <div class="vocab-body">
+      <p class="vocab-explain">The top storage spaces on racks. Special equipment is needed to reach them.</p>
+      <div class="vocab-example">🏭 "We need the reach truck to stock the uppers in aisle 7."</div>
+    </div>
+  </div>
+
+  <div class="vocab-card">
+    <div class="vocab-header"><span class="vocab-word">Schedule / On schedule</span><span class="vocab-trans">Horario / En horario</span></div>
+    <div class="vocab-body">
+      <p class="vocab-explain">The planned timetable for tasks and workers. "Get back on schedule" = return to the planned routine or timing after a disruption.</p>
+      <div class="vocab-example">🏭 "We need to get back on schedule — the morning was slower than usual."</div>
+    </div>
+  </div>
+
+  <div class="vocab-card">
+    <div class="vocab-header"><span class="vocab-word">Return transport</span><span class="vocab-trans">Área / turno de devoluciones</span></div>
+    <div class="vocab-body">
+      <p class="vocab-explain">The section or time period dedicated to processing returned items. In the meeting, everyone started there "till 8:00" (until 8 o'clock).</p>
+      <div class="vocab-example">🏭 "You're on return transport until 8 — after that, head to your regular station."</div>
+    </div>
+  </div>
+
+  <div class="vocab-card">
+    <div class="vocab-header"><span class="vocab-word">Seats</span><span class="vocab-trans">Unidades / artículos (conteo)</span></div>
+    <div class="vocab-body">
+      <p class="vocab-explain">In this warehouse context, "seats" refers to units or items counted in the inventory — not chairs. "700 seats in the back" = 700 units still stored in the back area.</p>
+      <div class="vocab-example">🏭 "We still have over 500 seats in the back that need to be processed."</div>
+    </div>
+  </div>
+
+  <div class="vocab-card">
+    <div class="vocab-header"><span class="vocab-word">Shipping desk</span><span class="vocab-trans">Escritorio / área de envíos</span></div>
+    <div class="vocab-body">
+      <p class="vocab-explain">The workstation or area where outgoing packages are processed, sealed, and labeled before shipping. The manager mentioned putting staple guns there.</p>
+      <div class="vocab-example">🏭 "Leave the completed boxes at the shipping desk for processing."</div>
+    </div>
+  </div>
+
+  <div class="vocab-card">
+    <div class="vocab-header"><span class="vocab-word">Patio</span><span class="vocab-trans">Patio / área exterior</span></div>
+    <div class="vocab-body">
+      <p class="vocab-explain">The outdoor area attached to the building. In this meeting, the manager made clear it is NOT an exit — workers cannot leave through there. It can be used to eat, but not to exit or smoke.</p>
+      <div class="vocab-example">🏭 "You can eat on the patio during break, but always come back through the front door."</div>
+    </div>
+  </div>
+
+  <div class="vocab-card">
+    <div class="vocab-header"><span class="vocab-word">Full schedule</span><span class="vocab-trans">Agenda llena / muy ocupado</span></div>
+    <div class="vocab-body">
+      <p class="vocab-explain">When someone says they have a "full schedule," it means their day is completely booked — no free time. The manager used this to explain why he couldn't bring breakfast.</p>
+      <div class="vocab-example">🏭 "The manager has a full schedule today, so the meeting will be short."</div>
+    </div>
+  </div>
+
+  <div class="vocab-card">
+    <div class="vocab-header"><span class="vocab-word">Dock</span><span class="vocab-trans">Muelle de carga</span></div>
+    <div class="vocab-body">
+      <p class="vocab-explain">The loading dock — the area where trucks deliver or pick up goods. Requires a checklist every time it is used. One of the most important areas in a warehouse.</p>
+      <div class="vocab-example">🏭 "The truck is at the dock — make sure someone fills out the checklist."</div>
+    </div>
+  </div>
+
+  <div class="vocab-card">
+    <div class="vocab-header"><span class="vocab-word">Inventory</span><span class="vocab-trans">Inventario</span></div>
+    <div class="vocab-body">
+      <p class="vocab-explain">The complete list and count of all items stored in the warehouse. Keeping inventory accurate is critical — every item must be scanned and in the right place.</p>
+      <div class="vocab-example">🏭 "We need to keep the inventory accurate — always scan before you put something away."</div>
+    </div>
+  </div>
+
+  <div class="vocab-card">
+    <div class="vocab-header"><span class="vocab-word">Heavy (work context)</span><span class="vocab-trans">Mucho trabajo / día ocupado</span></div>
+    <div class="vocab-body">
+      <p class="vocab-explain">"Heavy" in warehouse means there is a lot of work — many orders, high volume. The opposite is "not as heavy" = slower day, less work. Has nothing to do with physical weight.</p>
+      <div class="vocab-example">🏭 "It's going to be a heavy day — we have a big shipment coming in."</div>
+    </div>
+  </div>
+</div>
+
+<!-- ══════════════════════════════════════════
+     TAB 6 · REFERENCE GUIDE
+══════════════════════════════════════════ -->
+<div id="tab-reference" class="tab-content">
+  <h2>🗺️ Reference Guide for Future Meetings</h2>
+  <p class="section-intro">Save this tab. It will help you in every meeting, not just this one.</p>
+
+  <h3>🗣️ Common phrases in update meetings</h3>
+  <div class="ref-table-wrap"><table class="ref-table">
+    <thead><tr><th>If you hear in English...</th><th>Spanish translation</th><th>What it signals in the meeting</th></tr></thead>
+    <tbody>
+      <tr><td>"Good morning, everyone"</td><td>Buenos días a todos</td><td>Opening greeting — the meeting is starting. Get ready to listen.</td></tr>
+      <tr><td>"Alright, so..." / "The other thing..."</td><td>Bien, entonces... / La otra cosa...</td><td>Topic change — a new instruction or announcement is coming. Pay attention.</td></tr>
+      <tr><td>"One thing..." / "I got one thing"</td><td>Una cosa... / Tengo una cosa</td><td>Important announcement — the supervisor is about to share something that needs your action.</td></tr>
+      <tr><td>"Make sure that..."</td><td>Asegúrate de que...</td><td>Direct instruction — you must do this. It is not optional.</td></tr>
+      <tr><td>"Please make sure..."</td><td>Por favor asegúrate de...</td><td>Urgent reminder — this has happened (or been forgotten) before. Take it seriously.</td></tr>
+      <tr><td>"Everybody got that?"</td><td>¿Todos entendieron?</td><td>Confirmation check — this is your moment to ask if you didn't understand something.</td></tr>
+      <tr><td>"We're still missing..."</td><td>Todavía nos falta(n)...</td><td>Inventory problem — items are unaccounted for. Check your area.</td></tr>
+      <tr><td>"It happens" / "It's okay"</td><td>Pasa / Está bien</td><td>Reassurance — you are not in trouble, but you must still report the issue.</td></tr>
+      <tr><td>"We'll see how it goes"</td><td>Ya veremos cómo resulta</td><td>No definitive answer yet — the supervisor cannot confirm something right now.</td></tr>
+      <tr><td>"I've got a lot going on"</td><td>Tengo mucho en este momento</td><td>Signals the supervisor is very busy — expect a short meeting or limited availability.</td></tr>
+      <tr><td>"Let's go" / "Alright, that's it"</td><td>Vamos / Eso es todo</td><td>Meeting is over — time to go to your work area and start your shift.</td></tr>
+      <tr><td>"The numbers" / "Numbers were good"</td><td>Los números / Los números estuvieron bien</td><td>Productivity report — refers to the day's goals: how many items, orders, or tasks were completed.</td></tr>
+    </tbody>
+  </table></div>
+
+  <h3>👂 What to listen for carefully</h3>
+  <ul class="listen-list">
+    <li data-icon="🔢">Numbers: goals, missing items, tool counts — how many of something.</li>
+    <li data-icon="📍">Your work area, your name, or your shift being mentioned.</li>
+    <li data-icon="⚠️">"Make sure", "please", "don't" — these are direct instructions for you.</li>
+    <li data-icon="🔄">Tool, process, or location changes that affect your job.</li>
+    <li data-icon="🚨">"Missing", "broken", "problem", "wrong" — something is not right.</li>
+    <li data-icon="📋">Checklists or forms that you need to fill out.</li>
+    <li data-icon="🛡️">Safety topics: exits, smoking, knives, compressors, scanning in/out.</li>
+  </ul>
+
+  <h3>🏷️ How to identify what they're talking about</h3>
+  <div class="signal-grid">
+    <div class="signal-card">
+      <div class="signal-card-header" style="background:#FCEBEB;color:#791F1F;">🔴 Problem</div>
+      <div class="signal-card-body"><span>missing</span><span>broken</span><span>wrong</span><span>error</span><span>red</span><span>issue</span><span>can't</span><span>doesn't work</span></div>
+    </div>
+    <div class="signal-card">
+      <div class="signal-card-header" style="background:#FAEEDA;color:#633806;">🟡 Task / Instruction</div>
+      <div class="signal-card-body"><span>make sure</span><span>go to</span><span>fill out</span><span>scan</span><span>don't</span><span>always</span><span>never</span></div>
+    </div>
+    <div class="signal-card">
+      <div class="signal-card-header" style="background:#e0f0f1;color:#145255;">🕐 Time / Schedule</div>
+      <div class="signal-card-body"><span>until</span><span>at [time]</span><span>schedule</span><span>break</span><span>shift</span><span>start</span><span>today</span><span>tomorrow</span></div>
+    </div>
+    <div class="signal-card">
+      <div class="signal-card-header" style="background:#EAF3DE;color:#27500A;">📊 Productivity</div>
+      <div class="signal-card-body"><span>numbers</span><span>seats</span><span>count</span><span>heavy</span><span>slow</span><span>behind</span><span>goal</span></div>
+    </div>
+    <div class="signal-card">
+      <div class="signal-card-header" style="background:#FCEBEB;color:#791F1F;">⚠️ Safety</div>
+      <div class="signal-card-body"><span>exit</span><span>door</span><span>knife</span><span>smoke</span><span>safety</span><span>scan in/out</span><span>area</span></div>
+    </div>
+    <div class="signal-card">
+      <div class="signal-card-header" style="background:#E1F5EE;color:#085041;">🔄 Change</div>
+      <div class="signal-card-body"><span>instead of</span><span>new</span><span>change</span><span>from now on</span><span>starting today</span><span>moving to</span></div>
+    </div>
+  </div>
+
+  <h3>💡 If you hear this... it probably means this</h3>
+  <div class="if-you-hear-row" style="background:#e0f0f1;border-color:#a8d4d6;font-weight:600;color:#145255;">
+    <div>If you hear...</div><div>It probably means...</div>
+  </div>
+  <div class="if-you-hear-row"><div class="iyh-trigger">"The gun is giving you the red"</div><div class="iyh-means">Tu escáner tiene un error. Para y dile al lead de inmediato.</div></div>
+  <div class="if-you-hear-row"><div class="iyh-trigger">"Reconciling"</div><div class="iyh-means">Están verificando el inventario. Puede que te pidan buscar artículos.</div></div>
+  <div class="if-you-hear-row"><div class="iyh-trigger">"We're missing [number]"</div><div class="iyh-means">Hay artículos que no están donde deberían. Presta atención a tu área.</div></div>
+  <div class="if-you-hear-row"><div class="iyh-trigger">"Fill out the checklist"</div><div class="iyh-means">Hay un formulario que olvidaron completar. Asegúrate de hacerlo tú.</div></div>
+  <div class="if-you-hear-row"><div class="iyh-trigger">"Not an exit"</div><div class="iyh-means">No uses esa puerta para salir. Usa siempre la puerta principal.</div></div>
+  <div class="if-you-hear-row"><div class="iyh-trigger">"It's gonna be heavy today"</div><div class="iyh-means">Hoy habrá mucho trabajo. Prepárate para un día ocupado.</div></div>
+  <div class="if-you-hear-row"><div class="iyh-trigger">"Not as heavy"</div><div class="iyh-means">Hoy habrá menos trabajo. El ritmo será más tranquilo.</div></div>
+  <div class="if-you-hear-row"><div class="iyh-trigger">"Go to the lead"</div><div class="iyh-means">El supervisor no puede ayudarte. Ve con el líder del turno.</div></div>
+  <div class="if-you-hear-row"><div class="iyh-trigger">"It happens / it's okay"</div><div class="iyh-means">Cometiste un error pero no es grave. Solo repórtalo y sigue.</div></div>
+  <div class="if-you-hear-row"><div class="iyh-trigger">"We're going through too many..."</div><div class="iyh-means">El equipo está usando o perdiendo demasiadas de esas herramientas.</div></div>
+  <div class="if-you-hear-row"><div class="iyh-trigger">"On the first break"</div><div class="iyh-means">Algo va a pasar en el primer descanso. Pon atención a qué es.</div></div>
+  <div class="if-you-hear-row"><div class="iyh-trigger">"How it's supposed to"</div><div class="iyh-means">Hay una manera correcta de hacer algo. Si no sabes, pregunta.</div></div>
+</div>
+
+<!-- ══════════════════════════════════════════
+     TAB 7 · EXERCISES
+══════════════════════════════════════════ -->
+<div id="tab-exercises" class="tab-content">
+  <h2>✏️ Practice Exercises</h2>
+  <p class="section-intro">These exercises are based on the real meeting. Each one has a tip showing you where in the guide to find help. Take your time — there's no rush!</p>
+
+  <div class="progress-label" id="prog-label">Progress: 0 of 6 exercises completed</div>
+  <div class="progress-bar-wrap"><div class="progress-bar-fill" id="prog-bar" style="width:0%"></div></div>
+
+  <!-- ── Exercise 1: Fill in the blank ── -->
+  <div class="exercise-block" id="ex1">
+    <div class="exercise-header">
+      <span class="exercise-num">1</span>
+      <span class="exercise-title">Fill in the blank — Vocabulary</span>
+      <span class="exercise-type">Complete the sentence</span>
+    </div>
+    <div class="exercise-tip">💡 <strong>Study tip:</strong> Check the <em>Vocabulary tab</em> → look for "The gun / Scan gun" and "The red".</div>
+    <div class="exercise-body">
+      <p>Complete the sentences with the correct word from the box:</p>
+      <div style="background:#f0f4f4;border-radius:8px;padding:12px 16px;margin-bottom:18px;font-size:13px;color:#1a5d61;">
+        <strong>Word bank:</strong> &nbsp; lead &nbsp;|&nbsp; red &nbsp;|&nbsp; blind &nbsp;|&nbsp; reconciling &nbsp;|&nbsp; checklist
+      </div>
+
+      <div class="blank-sentence">1. If the scanner gives you the <input class="blank-input" id="b1a" placeholder="____">, stop and report it.</div>
+      <div class="blank-sentence">2. Always go to the <input class="blank-input" id="b1b" placeholder="____"> if you have a problem you can't fix.</div>
+      <div class="blank-sentence">3. The supervisor is <input class="blank-input" id="b1c" placeholder="____"> the inventory to find missing items.</div>
+      <div class="blank-sentence">4. An item without an assigned location is called a <input class="blank-input" id="b1d" placeholder="____">.</div>
+      <div class="blank-sentence">5. The dock <input class="blank-input" id="b1e" placeholder="____"> must be filled out every time you use that area.</div>
+
+      <div style="margin-top:16px;">
+        <button class="check-btn" onclick="checkFillBlank()">Check answers</button>
+        <button class="reset-btn" onclick="resetEx1()">Reset</button>
+      </div>
+      <div class="feedback-msg" id="fb1"></div>
+      <button class="hint-toggle" id="hint-toggle1" onclick="toggleHint(1)">💡 Show hints for wrong answers</button>
+      <div class="hint-box" id="hint-box1"></div>
+    </div>
+  </div>
+
+  <!-- ── Exercise 2: Multiple choice ── -->
+  <div class="exercise-block" id="ex2">
+    <div class="exercise-header">
+      <span class="exercise-num">2</span>
+      <span class="exercise-title">Multiple Choice — Phrases in Context</span>
+      <span class="exercise-type">Choose the best answer</span>
+    </div>
+    <div class="exercise-tip">💡 <strong>Study tip:</strong> Check the <em>Useful Phrases tab</em> → look for "Let somebody know" and "Go to the lead".</div>
+    <div class="exercise-body">
+
+      <div class="mc-question">1. Your scan gun shows a red screen. What should you do?</div>
+      <div class="mc-options" id="mc2a">
+        <div class="mc-option" onclick="selectMC('mc2a',this,false)"><div class="mc-circle"></div>Ignore it and keep working — it will fix itself.</div>
+        <div class="mc-option" onclick="selectMC('mc2a',this,true)"><div class="mc-circle"></div>Stop and let the lead or supervisor know right away.</div>
+        <div class="mc-option" onclick="selectMC('mc2a',this,false)"><div class="mc-circle"></div>Put the item somewhere and move on to the next one.</div>
+        <div class="mc-option" onclick="selectMC('mc2a',this,false)"><div class="mc-circle"></div>Take the scanner to the break room and wait.</div>
+      </div>
+
+      <div class="mc-question">2. The supervisor says "please make sure you're filling it out" three times. This means:</div>
+      <div class="mc-options" id="mc2b">
+        <div class="mc-option" onclick="selectMC('mc2b',this,false)"><div class="mc-circle"></div>It's optional — only if you have time.</div>
+        <div class="mc-option" onclick="selectMC('mc2b',this,false)"><div class="mc-circle"></div>Someone else will take care of it.</div>
+        <div class="mc-option" onclick="selectMC('mc2b',this,true)"><div class="mc-circle"></div>It's serious and has happened before — you must do it every time.</div>
+        <div class="mc-option" onclick="selectMC('mc2b',this,false)"><div class="mc-circle"></div>Only the lead needs to fill it out.</div>
+      </div>
+
+      <div class="mc-question">3. The supervisor says "not as heavy today." This means:</div>
+      <div class="mc-options" id="mc2c">
+        <div class="mc-option" onclick="selectMC('mc2c',this,false)"><div class="mc-circle"></div>The boxes are lighter than usual.</div>
+        <div class="mc-option" onclick="selectMC('mc2c',this,true)"><div class="mc-circle"></div>There will be less work / it will be a slower day.</div>
+        <div class="mc-option" onclick="selectMC('mc2c',this,false)"><div class="mc-circle"></div>The team is working too slowly.</div>
+        <div class="mc-option" onclick="selectMC('mc2c',this,false)"><div class="mc-circle"></div>Something is broken and it's not a big deal.</div>
+      </div>
+
+      <div style="margin-top:16px;">
+        <button class="check-btn" onclick="checkMC2()">Check answers</button>
+        <button class="reset-btn" onclick="resetEx2()">Reset</button>
+      </div>
+      <div class="feedback-msg" id="fb2"></div>
+      <button class="hint-toggle" id="hint-toggle2" onclick="toggleHint(2)">💡 Show hints</button>
+      <div class="hint-box" id="hint-box2"></div>
+    </div>
+  </div>
+
+  <!-- ── Exercise 3: Matching ── -->
+  <div class="exercise-block" id="ex3">
+    <div class="exercise-header">
+      <span class="exercise-num">3</span>
+      <span class="exercise-title">Matching — Tools &amp; Equipment</span>
+      <span class="exercise-type">Match the pairs</span>
+    </div>
+    <div class="exercise-tip">💡 <strong>Study tip:</strong> Check the <em>Vocabulary tab</em> → look for "Tape gun", "Staple gun", "Safety knife", and "Air compressor".</div>
+    <div class="exercise-body">
+      <p>Click a word on the left, then click its Spanish meaning on the right.</p>
+      <div class="match-grid">
+        <div>
+          <div class="match-col-label">English</div>
+          <div class="match-item" id="ml1" onclick="matchClick('left','ml1','Tape gun')">Tape gun</div>
+          <div class="match-item" id="ml2" onclick="matchClick('left','ml2','Staple gun')">Staple gun</div>
+          <div class="match-item" id="ml3" onclick="matchClick('left','ml3','Safety knife')">Safety knife</div>
+          <div class="match-item" id="ml4" onclick="matchClick('left','ml4','Air compressor')">Air compressor</div>
+        </div>
+        <div>
+          <div class="match-col-label">Español</div>
+          <div class="match-item" id="mr1" onclick="matchClick('right','mr1','Air compressor')">Compresor de aire</div>
+          <div class="match-item" id="mr2" onclick="matchClick('right','mr2','Safety knife')">Cuchillo de seguridad</div>
+          <div class="match-item" id="mr3" onclick="matchClick('right','mr3','Tape gun')">Pistola de cinta adhesiva</div>
+          <div class="match-item" id="mr4" onclick="matchClick('right','mr4','Staple gun')">Grapadora industrial</div>
+        </div>
+      </div>
+      <div style="margin-top:8px;">
+        <button class="reset-btn" onclick="resetEx3()">Reset</button>
+      </div>
+      <div class="feedback-msg" id="fb3"></div>
+    </div>
+  </div>
+
+  <!-- ── Exercise 4: Comprehension MC ── -->
+  <div class="exercise-block" id="ex4">
+    <div class="exercise-header">
+      <span class="exercise-num">4</span>
+      <span class="exercise-title">Comprehension — What happened in the meeting?</span>
+      <span class="exercise-type">Choose the best answer</span>
+    </div>
+    <div class="exercise-tip">💡 <strong>Study tip:</strong> Check the <em>Key Moments tab</em> and the <em>Summary tab</em> to review the main events.</div>
+    <div class="exercise-body">
+
+      <div class="mc-question">1. Why did the supervisor mention the dock checklist?</div>
+      <div class="mc-options" id="mc4a">
+        <div class="mc-option" onclick="selectMC('mc4a',this,false)"><div class="mc-circle"></div>Because it was filled out incorrectly.</div>
+        <div class="mc-option" onclick="selectMC('mc4a',this,true)"><div class="mc-circle"></div>Because it wasn't filled out, even though the dock was used Monday and Tuesday.</div>
+        <div class="mc-option" onclick="selectMC('mc4a',this,false)"><div class="mc-circle"></div>Because a new checklist was introduced starting that week.</div>
+        <div class="mc-option" onclick="selectMC('mc4a',this,false)"><div class="mc-circle"></div>Because it needed a supervisor's signature.</div>
+      </div>
+
+      <div class="mc-question">2. What change did the manager announce about tools?</div>
+      <div class="mc-options" id="mc4b">
+        <div class="mc-option" onclick="selectMC('mc4b',this,false)"><div class="mc-circle"></div>Replace safety knives with regular blades.</div>
+        <div class="mc-option" onclick="selectMC('mc4b',this,false)"><div class="mc-circle"></div>Stop using all handheld tools.</div>
+        <div class="mc-option" onclick="selectMC('mc4b',this,true)"><div class="mc-circle"></div>Use staple guns instead of tape guns at the shipping desk.</div>
+        <div class="mc-option" onclick="selectMC('mc4b',this,false)"><div class="mc-circle"></div>Order more tape guns from the supplier.</div>
+      </div>
+
+      <div class="mc-question">3. What is the correct way to enter and exit the building?</div>
+      <div class="mc-options" id="mc4c">
+        <div class="mc-option" onclick="selectMC('mc4c',this,false)"><div class="mc-circle"></div>Use the patio door for breaks and the front door for the start of shift.</div>
+        <div class="mc-option" onclick="selectMC('mc4c',this,false)"><div class="mc-circle"></div>Any door is fine as long as you scan in.</div>
+        <div class="mc-option" onclick="selectMC('mc4c',this,true)"><div class="mc-circle"></div>Always use the front door — both entering and leaving.</div>
+        <div class="mc-option" onclick="selectMC('mc4c',this,false)"><div class="mc-circle"></div>Use the east side door for smoking breaks.</div>
+      </div>
+
+      <div style="margin-top:16px;">
+        <button class="check-btn" onclick="checkMC4()">Check answers</button>
+        <button class="reset-btn" onclick="resetEx4()">Reset</button>
+      </div>
+      <div class="feedback-msg" id="fb4"></div>
+      <button class="hint-toggle" id="hint-toggle4" onclick="toggleHint(4)">💡 Show hints</button>
+      <div class="hint-box" id="hint-box4"></div>
+    </div>
+  </div>
+
+  <!-- ── Exercise 5: Fill in the blank — phrases ── -->
+  <div class="exercise-block" id="ex5">
+    <div class="exercise-header">
+      <span class="exercise-num">5</span>
+      <span class="exercise-title">Fill in the blank — Useful Phrases</span>
+      <span class="exercise-type">Complete the sentence</span>
+    </div>
+    <div class="exercise-tip">💡 <strong>Study tip:</strong> Check the <em>Reference Guide tab</em> → "If you hear this... it probably means this" section.</div>
+    <div class="exercise-body">
+      <p>Fill in each blank with the correct phrase or word:</p>
+      <div style="background:#f0f4f4;border-radius:8px;padding:12px 16px;margin-bottom:18px;font-size:13px;color:#1a5d61;">
+        <strong>Word bank:</strong> &nbsp; heavy &nbsp;|&nbsp; exit &nbsp;|&nbsp; know &nbsp;|&nbsp; lead &nbsp;|&nbsp; goes
+      </div>
+
+      <div class="blank-sentence">1. "We'll see how it <input class="blank-input" id="b5a" placeholder="____">." — No definitive answer yet.</div>
+      <div class="blank-sentence">2. "Let somebody <input class="blank-input" id="b5b" placeholder="____">." — Always report problems, don't stay silent.</div>
+      <div class="blank-sentence">3. "The patio is not an <input class="blank-input" id="b5c" placeholder="____">." — Always use the front door.</div>
+      <div class="blank-sentence">4. "It's gonna be <input class="blank-input" id="b5d" placeholder="____"> today." — There will be a lot of work.</div>
+      <div class="blank-sentence">5. "Go to the <input class="blank-input" id="b5e" placeholder="____">." — The person in charge on the floor during your shift.</div>
+
+      <div style="margin-top:16px;">
+        <button class="check-btn" onclick="checkFillBlank5()">Check answers</button>
+        <button class="reset-btn" onclick="resetEx5()">Reset</button>
+      </div>
+      <div class="feedback-msg" id="fb5"></div>
+      <button class="hint-toggle" id="hint-toggle5" onclick="toggleHint(5)">💡 Show hints for wrong answers</button>
+      <div class="hint-box" id="hint-box5"></div>
+    </div>
+  </div>
+
+  <!-- ── Exercise 6: True / False ── -->
+  <div class="exercise-block" id="ex6">
+    <div class="exercise-header">
+      <span class="exercise-num">6</span>
+      <span class="exercise-title">True or False — Meeting Comprehension</span>
+      <span class="exercise-type">True / False</span>
+    </div>
+    <div class="exercise-tip">💡 <strong>Study tip:</strong> Go back to the <em>Transcription tab</em> and read the meeting again to verify each statement.</div>
+    <div class="exercise-body">
+      <p>Select TRUE or FALSE for each statement about the meeting:</p>
+
+      <div id="tf-container">
+        <div class="tf-item" id="tf1" style="margin-bottom:12px;">
+          <div style="font-size:14px;color:#2c2c2a;margin-bottom:6px;">1. The supervisor said the team did a bad job.</div>
+          <div style="display:flex;gap:8px;">
+            <button class="tf-btn" onclick="selectTF('tf1',this,false,'FALSE')" style="padding:10px 22px;border-radius:7px;border:1.5px solid #d0dede;background:#fff;cursor:pointer;font-size:15px;font-weight:500;font-family:inherit;transition:all 0.15s;">TRUE</button>
+            <button class="tf-btn" onclick="selectTF('tf1',this,true,'TRUE')" style="padding:10px 22px;border-radius:7px;border:1.5px solid #d0dede;background:#fff;cursor:pointer;font-size:15px;font-weight:500;font-family:inherit;transition:all 0.15s;">FALSE</button>
+          </div>
+        </div>
+        <div class="tf-item" id="tf2" style="margin-bottom:12px;">
+          <div style="font-size:14px;color:#2c2c2a;margin-bottom:6px;">2. The patio can be used to eat your lunch during breaks.</div>
+          <div style="display:flex;gap:8px;">
+            <button class="tf-btn" onclick="selectTF('tf2',this,true,'FALSE')" style="padding:10px 22px;border-radius:7px;border:1.5px solid #d0dede;background:#fff;cursor:pointer;font-size:15px;font-weight:500;font-family:inherit;transition:all 0.15s;">TRUE</button>
+            <button class="tf-btn" onclick="selectTF('tf2',this,false,'TRUE')" style="padding:10px 22px;border-radius:7px;border:1.5px solid #d0dede;background:#fff;cursor:pointer;font-size:15px;font-weight:500;font-family:inherit;transition:all 0.15s;">FALSE</button>
+          </div>
+        </div>
+        <div class="tf-item" id="tf3" style="margin-bottom:12px;">
+          <div style="font-size:14px;color:#2c2c2a;margin-bottom:6px;">3. The air compressor was broken and needed to be replaced.</div>
+          <div style="display:flex;gap:8px;">
+            <button class="tf-btn" onclick="selectTF('tf3',this,true,'FALSE')" style="padding:10px 22px;border-radius:7px;border:1.5px solid #d0dede;background:#fff;cursor:pointer;font-size:15px;font-weight:500;font-family:inherit;transition:all 0.15s;">TRUE</button>
+            <button class="tf-btn" onclick="selectTF('tf3',this,false,'TRUE')" style="padding:10px 22px;border-radius:7px;border:1.5px solid #d0dede;background:#fff;cursor:pointer;font-size:15px;font-weight:500;font-family:inherit;transition:all 0.15s;">FALSE</button>
+          </div>
+        </div>
+        <div class="tf-item" id="tf4" style="margin-bottom:12px;">
+          <div style="font-size:14px;color:#2c2c2a;margin-bottom:6px;">4. Workers can smoke anywhere outside the building.</div>
+          <div style="display:flex;gap:8px;">
+            <button class="tf-btn" onclick="selectTF('tf4',this,false,'FALSE')" style="padding:10px 22px;border-radius:7px;border:1.5px solid #d0dede;background:#fff;cursor:pointer;font-size:15px;font-weight:500;font-family:inherit;transition:all 0.15s;">TRUE</button>
+            <button class="tf-btn" onclick="selectTF('tf4',this,true,'TRUE')" style="padding:10px 22px;border-radius:7px;border:1.5px solid #d0dede;background:#fff;cursor:pointer;font-size:15px;font-weight:500;font-family:inherit;transition:all 0.15s;">FALSE</button>
+          </div>
+        </div>
+        <div class="tf-item" id="tf5" style="margin-bottom:12px;">
+          <div style="font-size:14px;color:#2c2c2a;margin-bottom:6px;">5. If your scanner has an error, you should let somebody know.</div>
+          <div style="display:flex;gap:8px;">
+            <button class="tf-btn" onclick="selectTF('tf5',this,true,'FALSE')" style="padding:10px 22px;border-radius:7px;border:1.5px solid #d0dede;background:#fff;cursor:pointer;font-size:15px;font-weight:500;font-family:inherit;transition:all 0.15s;">TRUE</button>
+            <button class="tf-btn" onclick="selectTF('tf5',this,false,'TRUE')" style="padding:10px 22px;border-radius:7px;border:1.5px solid #d0dede;background:#fff;cursor:pointer;font-size:15px;font-weight:500;font-family:inherit;transition:all 0.15s;">FALSE</button>
+          </div>
+        </div>
+      </div>
+
+      <div style="margin-top:16px;">
+        <button class="check-btn" onclick="checkTF()">Check answers</button>
+        <button class="reset-btn" onclick="resetEx6()">Reset</button>
+      </div>
+      <div class="feedback-msg" id="fb6"></div>
+      <button class="hint-toggle" id="hint-toggle6" onclick="toggleHint(6)">💡 Show hints</button>
+      <div class="hint-box" id="hint-box6"></div>
+    </div>
+  </div>
+
+  <!-- Score summary -->
+  <div class="score-summary" id="score-summary">
+    <div class="score-big" id="score-num">0/6</div>
+    <div class="score-label" id="score-text">Keep practicing — you're doing great!</div>
+  </div>
+</div>
+
+<!-- ══════════════════════════════════════════
+     TAB 8 · MOST IMPORTANT
+══════════════════════════════════════════ -->
+<div id="tab-most-important" class="tab-content">
+  <h2>⭐ The Most Important Things Mariannys Must Learn</h2>
+  <p class="section-intro">This section is for you, Mariannys. Read it before every meeting to remember what matters most. 💪</p>
+
+  <div class="final-point">
+    <div class="final-num">1</div>
+    <div class="final-body">
+      <div class="final-title">🔴 If your scanner shows an error (the red), stop and tell someone</div>
+      <p class="final-text">Don't try to fix it alone and don't ignore it. Go directly to the lead or supervisor. An unreported error can damage the entire team's inventory.</p>
+    </div>
+  </div>
+
+  <div class="final-point">
+    <div class="final-num amber">2</div>
+    <div class="final-body">
+      <div class="final-title">📋 Checklists and forms are mandatory</div>
+      <p class="final-text">If there's a checklist to fill out (like the dock checklist), you must do it every time you use that equipment or area. It's not optional. When people forget, the supervisor notices.</p>
+    </div>
+  </div>
+
+  <div class="final-point">
+    <div class="final-num">3</div>
+    <div class="final-body">
+      <div class="final-title">🚪 Always use the correct door to enter and exit</div>
+      <p class="final-text">The patio is not an exit. The front door is the only official entry/exit. This records your presence in the building — it's a safety matter.</p>
+    </div>
+  </div>
+
+  <div class="final-point">
+    <div class="final-num amber">4</div>
+    <div class="final-body">
+      <div class="final-title">🔁 When the supervisor repeats something, it's serious</div>
+      <p class="final-text">In this meeting they said "please, please, please fill it out." When you hear an instruction repeated multiple times, it already caused a problem before. Pay extra attention to those moments.</p>
+    </div>
+  </div>
+
+  <div class="final-point">
+    <div class="final-num teal">5</div>
+    <div class="final-body">
+      <div class="final-title">🗣️ "Let somebody know" — the most important phrase in the warehouse</div>
+      <p class="final-text">No matter what problem you have — broken scanner, item in the wrong place, not sure how to do something — always tell someone. Don't stay quiet. Communicating problems is part of your job.</p>
+    </div>
+  </div>
+
+  <div class="final-point">
+    <div class="final-num">6</div>
+    <div class="final-body">
+      <div class="final-title">🧠 You don't have to understand everything to participate</div>
+      <p class="final-text">If you don't understand something in the meeting, don't worry. Listen for key words: area names, tools, numbers, and phrases with "make sure." With those, you'll catch the most important parts. With time, warehouse English becomes very familiar.</p>
+    </div>
+  </div>
+
+  <div class="encouragement">
+    <h3>🌟 You can do this!</h3>
+    <p>Warehouse English has its own vocabulary. Every meeting you listen to is real practice. Keep going — you're already doing exactly the right thing.</p>
+  </div>
+</div>
+
+<!-- ══════════════════════════════════════════
+     FOOTER
+══════════════════════════════════════════ -->
+<footer class="site-footer">
+  <strong>Your English Buddy</strong> &nbsp;·&nbsp; English for Warehouse Update Meetings &nbsp;·&nbsp; Study guide prepared from Mariannys' real meeting recording<br>
+  <span style="margin-top:4px;display:inline-block;">© All Rights Reserved — Your English Buddy</span>
+</footer>
+
+<script>
+// ── Tab navigation ──────────────────────────────
+function showTab(id, btn) {
+  document.querySelectorAll('.tab-content').forEach(el => el.classList.remove('active'));
+  document.querySelectorAll('.tab-btn').forEach(el => el.classList.remove('active'));
+  document.getElementById('tab-' + id).classList.add('active');
+  if (btn) btn.classList.add('active');
+  window.scrollTo({ top: 0, behavior: 'smooth' });
+}
+
+function setTransMode(mode, btn) {
+  document.querySelectorAll('.lang-btn').forEach(function(b){ b.classList.remove('active'); });
+  btn.classList.add('active');
+  var body = document.getElementById('transcript-body');
+  body.classList.remove('bilingual-mode', 'es-only-mode');
+  if (mode === 'bilingual') body.classList.add('bilingual-mode');
+  if (mode === 'es') body.classList.add('es-only-mode');
+}
+
+// ── Progress tracker ────────────────────────────
+var completed = {};
+function markCompleted(exId) {
+  completed[exId] = true;
+  var n = Object.keys(completed).length;
+  document.getElementById('prog-bar').style.width = (n/6*100) + '%';
+  document.getElementById('prog-label').textContent = 'Progress: ' + n + ' of 6 exercises completed';
+  if (n === 6) {
+    var s = document.getElementById('score-summary');
+    s.classList.add('visible');
+    s.scrollIntoView({ behavior: 'smooth', block: 'nearest' });
+  }
+}
+
+// ── Exercise 1: Fill in blank ───────────────────
+var blanks1 = { b1a:'red', b1b:'lead', b1c:'reconciling', b1d:'blind', b1e:'checklist' };
+function checkFillBlank() {
+  var correct = 0;
+  for (var id in blanks1) {
+    var el = document.getElementById(id);
+    var val = el.value.trim().toLowerCase();
+    el.classList.remove('correct','incorrect');
+    if (val === blanks1[id]) { el.classList.add('correct'); correct++; }
+    else { el.classList.add('incorrect'); }
+  }
+  var fb = document.getElementById('fb1');
+  var wrongIds1 = [];
+  for (var id in blanks1) { if (document.getElementById(id).classList.contains('incorrect')) wrongIds1.push(id); }
+  if (correct === 5) { fb.className='feedback-msg correct'; fb.textContent='✅ Perfect! All 5 correct. Great job!'; markCompleted('ex1'); showHintToggle(1,false); }
+  else if (correct >= 3) { fb.className='feedback-msg partial'; fb.textContent='⚡ ' + correct + '/5 correct. Check the red ones!'; buildFillHints(1, wrongIds1); showHintToggle(1, true); }
+  else { fb.className='feedback-msg incorrect'; fb.textContent='❌ ' + correct + '/5 correct. Review the Vocabulary tab!'; buildFillHints(1, wrongIds1); showHintToggle(1, true); }
+}
+function resetEx1() {
+  ['b1a','b1b','b1c','b1d','b1e'].forEach(function(id){ var el=document.getElementById(id); el.value=''; el.className='blank-input'; });
+  var fb=document.getElementById('fb1'); fb.className='feedback-msg'; fb.textContent='';
+  showHintToggle(1,false);
+}
+
+// ── MC helper ───────────────────────────────────
+function selectMC(groupId, clickedEl, isCorrect) {
+  var group = document.getElementById(groupId);
+  var opts = group.querySelectorAll('.mc-option');
+  opts.forEach(function(o){ o.classList.remove('selected'); });
+  clickedEl.classList.add('selected');
+  clickedEl.dataset.correct = isCorrect ? '1' : '0';
+}
+
+// ── Exercise 2: MC phrases ──────────────────────
+function checkMC2() {
+  var groups = ['mc2a','mc2b','mc2c'];
+  var correct = 0;
+  groups.forEach(function(gId) {
+    var g = document.getElementById(gId);
+    var sel = g.querySelector('.selected');
+    if (!sel) return;
+    var opts = g.querySelectorAll('.mc-option');
+    opts.forEach(function(o) {
+      if (o.dataset.correct === '1') o.classList.add('show-correct');
+    });
+    if (sel.dataset.correct === '1') { sel.classList.add('correct'); correct++; }
+    else { sel.classList.add('incorrect'); }
+  });
+  var fb = document.getElementById('fb2');
+  var wrongMC2 = ['mc2a','mc2b','mc2c'].filter(function(g){ var sel=document.getElementById(g).querySelector('.selected'); return !sel || sel.dataset.correct !== '1'; });
+  if (correct === 3) { fb.className='feedback-msg correct'; fb.textContent='✅ Perfect! All 3 correct!'; markCompleted('ex2'); showHintToggle(2,false); }
+  else if (correct >= 1) { fb.className='feedback-msg partial'; fb.textContent='⚡ ' + correct + '/3 correct. The green options show the right answers.'; buildMCHints(2, wrongMC2); showHintToggle(2, true); }
+  else { fb.className='feedback-msg incorrect'; fb.textContent='❌ 0/3 correct. Review the Useful Phrases and Key Moments tabs!'; buildMCHints(2, wrongMC2); showHintToggle(2, true); }
+}
+function resetEx2() {
+  ['mc2a','mc2b','mc2c'].forEach(function(gId) {
+    var g = document.getElementById(gId);
+    g.querySelectorAll('.mc-option').forEach(function(o){ o.className='mc-option'; delete o.dataset.correct; });
+  });
+  var fb=document.getElementById('fb2'); fb.className='feedback-msg'; fb.textContent='';
+}
+
+// ── Exercise 3: Matching ────────────────────────
+var matchState = { left: null, leftId: null, leftVal: null };
+var matchPairs = { 'Tape gun':'Pistola de cinta adhesiva', 'Staple gun':'Grapadora industrial', 'Safety knife':'Cuchillo de seguridad', 'Air compressor':'Compresor de aire' };
+var matchMap = { 'mr1':'Air compressor','mr2':'Safety knife','mr3':'Tape gun','mr4':'Staple gun' };
+var matchDone = 0;
+
+function matchClick(side, elId, val) {
+  var el = document.getElementById(elId);
+  if (el.classList.contains('matched') || el.classList.contains('wrong')) return;
+
+  if (side === 'left') {
+    if (matchState.left) document.getElementById(matchState.leftId).classList.remove('selected');
+    matchState.left = el; matchState.leftId = elId; matchState.leftVal = val;
+    el.classList.add('selected');
+  } else if (side === 'right' && matchState.left) {
+    var rightVal = matchMap[elId];
+    var correct = (matchState.leftVal === rightVal);
+    if (correct) {
+      matchState.left.classList.remove('selected'); matchState.left.classList.add('matched');
+      el.classList.add('matched');
+      matchDone++;
+      var fb = document.getElementById('fb3');
+      if (matchDone === 4) { fb.className='feedback-msg correct'; fb.textContent='✅ All matched correctly! Well done!'; markCompleted('ex3'); }
+      else { fb.className='feedback-msg partial'; fb.textContent='✅ Correct! Keep going — ' + (4-matchDone) + ' more to go.'; }
+    } else {
+      matchState.left.classList.remove('selected'); matchState.left.classList.add('wrong');
+      el.classList.add('wrong');
+      setTimeout(function() {
+        matchState.left.classList.remove('wrong'); el.classList.remove('wrong');
+        var fb = document.getElementById('fb3');
+        fb.className='feedback-msg incorrect'; fb.textContent='❌ Not a match. Try again — check the Vocabulary tab!';
+        setTimeout(function(){ fb.className='feedback-msg'; fb.textContent=''; }, 2000);
+      }, 800);
+    }
+    matchState = { left: null, leftId: null, leftVal: null };
+  }
+}
+function resetEx3() {
+  ['ml1','ml2','ml3','ml4','mr1','mr2','mr3','mr4'].forEach(function(id){ document.getElementById(id).className='match-item'; });
+  matchState = { left: null, leftId: null, leftVal: null }; matchDone = 0;
+  var fb=document.getElementById('fb3'); fb.className='feedback-msg'; fb.textContent='';
+}
+
+// ── Exercise 4: Comprehension MC ────────────────
+function checkMC4() {
+  var groups = ['mc4a','mc4b','mc4c'];
+  var correct = 0;
+  groups.forEach(function(gId) {
+    var g = document.getElementById(gId);
+    var sel = g.querySelector('.selected');
+    if (!sel) return;
+    var opts = g.querySelectorAll('.mc-option');
+    opts.forEach(function(o) { if (o.dataset.correct === '1') o.classList.add('show-correct'); });
+    if (sel.dataset.correct === '1') { sel.classList.add('correct'); correct++; }
+    else sel.classList.add('incorrect');
+  });
+  var fb = document.getElementById('fb4');
+  var wrongMC4 = ['mc4a','mc4b','mc4c'].filter(function(g){ var sel=document.getElementById(g).querySelector('.selected'); return !sel || sel.dataset.correct !== '1'; });
+  if (correct === 3) { fb.className='feedback-msg correct'; fb.textContent='✅ Perfect! You understood the meeting well!'; markCompleted('ex4'); showHintToggle(4,false); }
+  else if (correct >= 1) { fb.className='feedback-msg partial'; fb.textContent='⚡ ' + correct + '/3 correct. Check the highlighted answers.'; buildMCHints(4, wrongMC4); showHintToggle(4, true); }
+  else { fb.className='feedback-msg incorrect'; fb.textContent='❌ 0/3 correct. Review the Summary and Key Moments tabs!'; buildMCHints(4, wrongMC4); showHintToggle(4, true); }
+}
+function resetEx4() {
+  ['mc4a','mc4b','mc4c'].forEach(function(gId) {
+    document.getElementById(gId).querySelectorAll('.mc-option').forEach(function(o){ o.className='mc-option'; delete o.dataset.correct; });
+  });
+  var fb=document.getElementById('fb4'); fb.className='feedback-msg'; fb.textContent='';
+  showHintToggle(4,false);
+}
+
+// ── Exercise 5: Fill blank phrases ──────────────
+var blanks5 = { b5a:'goes', b5b:'know', b5c:'exit', b5d:'heavy', b5e:'lead' };
+function checkFillBlank5() {
+  var correct = 0;
+  for (var id in blanks5) {
+    var el = document.getElementById(id);
+    var val = el.value.trim().toLowerCase();
+    el.classList.remove('correct','incorrect');
+    if (val === blanks5[id]) { el.classList.add('correct'); correct++; }
+    else el.classList.add('incorrect');
+  }
+  var fb = document.getElementById('fb5');
+  var wrongIds5 = [];
+  for (var id in blanks5) { if (document.getElementById(id).classList.contains('incorrect')) wrongIds5.push(id); }
+  if (correct === 5) { fb.className='feedback-msg correct'; fb.textContent='✅ Perfect! All 5 correct!'; markCompleted('ex5'); showHintToggle(5,false); }
+  else if (correct >= 3) { fb.className='feedback-msg partial'; fb.textContent='⚡ ' + correct + '/5 correct. Check the red ones!'; buildFillHints(5, wrongIds5); showHintToggle(5, true); }
+  else { fb.className='feedback-msg incorrect'; fb.textContent='❌ ' + correct + '/5 correct. Review the Useful Phrases tab!'; buildFillHints(5, wrongIds5); showHintToggle(5, true); }
+}
+function resetEx5() {
+  ['b5a','b5b','b5c','b5d','b5e'].forEach(function(id){ var el=document.getElementById(id); el.value=''; el.className='blank-input'; });
+  var fb=document.getElementById('fb5'); fb.className='feedback-msg'; fb.textContent='';
+  showHintToggle(5,false);
+}
+
+
+// ── Hint system ──────────────────────────────────────────
+var hintData = {
+  1: {
+    b1a: "The answer is RED. When the scanner shows a red screen it means ERROR. Stop and tell the lead. See Vocabulary tab: The red.",
+    b1b: "The answer is LEAD. The lead is the person in charge on the floor during your shift. See Vocabulary tab: The lead.",
+    b1c: "The answer is RECONCILING. It means comparing the computer system against what is physically in the warehouse. See Vocabulary tab: Reconciling.",
+    b1d: "The answer is BLIND. A blind is an item in the system without an assigned location. See Vocabulary tab: Blind.",
+    b1e: "The answer is CHECKLIST. A checklist is a mandatory form you fill out every time. The dock checklist was a big topic in this meeting! See Key Moments tab."
+  },
+  2: {
+    mc2a: "Think about the phrase: let somebody know and go to the lead. If the scanner gives you the red, STOP and report it right away. Never ignore an error. See Useful Phrases tab.",
+    mc2b: "When a supervisor says please three times, it means the issue is SERIOUS and has happened before. It is not optional. See Key Moments tab, Moment 3.",
+    mc2c: "Heavy in warehouse English does NOT mean the boxes are physically heavy. It means the WORKLOAD is high. Not as heavy = slower, quieter day. See Vocabulary tab: Heavy."
+  },
+  4: {
+    mc4a: "The supervisor mentioned the dock checklist because it was already Wednesday and had not been filled since Monday. The dock was used but nobody completed the form. Check the Transcription tab.",
+    mc4b: "The manager suggested switching from tape guns to staple guns at the shipping desk because they are quicker. See Key Moments tab, Moment 5.",
+    mc4c: "The manager was very clear: Come in the front door, leave out the front door. The patio is NOT an exit. See Key Moments tab, Moment 4."
+  },
+  5: {
+    b5a: "The answer is GOES. We will see how it goes means no definitive answer yet. See Useful Phrases tab: We will see how it goes.",
+    b5b: "The answer is KNOW. Let somebody know = tell someone / report it. One of the most important phrases in the warehouse! See Useful Phrases tab.",
+    b5c: "The answer is EXIT. Not an exit means you cannot leave through that door. Always use the front door. See Key Moments tab, Moment 4.",
+    b5d: "The answer is HEAVY. In warehouse, heavy means a busy day with lots of work. Nothing to do with physical weight! See Vocabulary tab: Heavy.",
+    b5e: "The answer is LEAD. The lead is the person responsible for the floor during your shift. Go to them first when you have a problem. See Vocabulary tab: The lead."
+  },
+  6: {
+    tf1: "The supervisor actually said: Really good job! He was complimenting the team. So the statement that they did a bad job is FALSE. Check Transcription tab, Part 1.",
+    tf2: "The manager said you CAN go to the patio to eat. So eating there = TRUE. But remember: it is NOT an exit, and you must use the front door to come back in.",
+    tf3: "Yes, TRUE. The air compressor had a hole and was taken to the shop. A replacement needed to be ordered. See Key Moments tab, Moment 6.",
+    tf4: "FALSE. There is a dedicated smoking area on the east side of the building. Workers cannot smoke just anywhere outside. See Key Moments tab, Moment 4.",
+    tf5: "TRUE. Let somebody know is one of the main instructions in this meeting. Never stay quiet about scanner errors or problems. See Useful Phrases tab."
+  }
+};
+
+function toggleHint(exNum) {
+  var btn = document.getElementById('hint-toggle' + exNum);
+  var box = document.getElementById('hint-box' + exNum);
+  if (!btn || !box) return;
+  if (box.classList.contains('visible')) {
+    box.classList.remove('visible');
+    btn.textContent = '💡 Show hints';
+  } else {
+    box.classList.add('visible');
+    btn.textContent = '🙈 Hide hints';
+  }
+}
+
+function showHintToggle(exNum, show) {
+  var btn = document.getElementById('hint-toggle' + exNum);
+  var box = document.getElementById('hint-box' + exNum);
+  if (!btn) return;
+  if (show) {
+    btn.classList.add('visible');
+  } else {
+    btn.classList.remove('visible');
+    if (box) { box.classList.remove('visible'); box.innerHTML = ''; }
+  }
+}
+
+function buildFillHints(exNum, wrongIds) {
+  var box = document.getElementById('hint-box' + exNum);
+  if (!box || !wrongIds.length) return;
+  var html = '<strong style="color:#1a5d61">Hints for wrong answers:</strong><ul style="margin:8px 0 0 16px;padding:0">';
+  wrongIds.forEach(function(id) {
+    var hint = hintData[exNum] && hintData[exNum][id];
+    if (hint) html += '<li style="margin-bottom:8px">' + hint + '</li>';
+  });
+  html += '</ul>';
+  box.innerHTML = html;
+}
+
+function buildMCHints(exNum, wrongGroups) {
+  var box = document.getElementById('hint-box' + exNum);
+  if (!box || !wrongGroups.length) return;
+  var html = '<strong style="color:#1a5d61">Hints for wrong answers:</strong><ul style="margin:8px 0 0 16px;padding:0">';
+  wrongGroups.forEach(function(gId) {
+    var hint = hintData[exNum] && hintData[exNum][gId];
+    if (hint) html += '<li style="margin-bottom:8px">' + hint + '</li>';
+  });
+  html += '</ul>';
+  box.innerHTML = html;
+}
+
+function buildTFHints(wrongIds) {
+  var box = document.getElementById('hint-box6');
+  if (!box || !wrongIds.length) return;
+  var html = '<strong style="color:#1a5d61">Hints for wrong answers:</strong><ul style="margin:8px 0 0 16px;padding:0">';
+  wrongIds.forEach(function(id) {
+    var hint = hintData[6] && hintData[6][id];
+    if (hint) html += '<li style="margin-bottom:8px">' + hint + '</li>';
+  });
+  html += '</ul>';
+  box.innerHTML = html;
+}
+
+// ── Exercise 6: True / False ─────────────────────
+// correct answers: tf1=FALSE(true btn), tf2=TRUE(true btn), tf3=TRUE(true btn), tf4=FALSE(true btn), tf5=TRUE(true btn)
+var tfAnswers = { tf1: 'FALSE', tf2: 'TRUE', tf3: 'TRUE', tf4: 'FALSE', tf5: 'TRUE' };
+var tfSelected = {};
+
+function selectTF(itemId, btn, isCorrect, btnLabel) {
+  var item = document.getElementById(itemId);
+  item.querySelectorAll('.tf-btn').forEach(function(b){ b.style.background='#fff'; b.style.borderColor='#d0dede'; b.style.color='#2c2c2a'; });
+  btn.style.background='#1a5d61'; btn.style.borderColor='#1a5d61'; btn.style.color='#fff';
+  tfSelected[itemId] = { correct: isCorrect, label: btnLabel };
+}
+
+function checkTF() {
+  var correct = 0;
+  for (var id in tfAnswers) {
+    var item = document.getElementById(id);
+    var btns = item.querySelectorAll('.tf-btn');
+    var sel = tfSelected[id];
+    btns.forEach(function(b){ b.style.background='#fff'; b.style.borderColor='#d0dede'; b.style.color='#2c2c2a'; });
+    // highlight correct answer green
+    btns.forEach(function(b){
+      if (b.textContent.trim() === tfAnswers[id]) { b.style.background='#e1f5ee'; b.style.borderColor='#1D9E75'; b.style.color='#085041'; }
+    });
+    if (sel && sel.correct) correct++;
+    else if (sel && !sel.correct) {
+      // mark selected wrong
+      btns.forEach(function(b){
+        if (b.textContent.trim() === sel.label && tfAnswers[id] !== sel.label) { b.style.background='#fcebeb'; b.style.borderColor='#E24B4A'; b.style.color='#791F1F'; }
+      });
+    }
+  }
+  var fb = document.getElementById('fb6');
+  var wrongTF = Object.keys(tfAnswers).filter(function(id){ var sel=tfSelected[id]; return !sel || !sel.correct; });
+  if (correct === 5) { fb.className='feedback-msg correct'; fb.textContent='✅ Perfect score! You understood everything!'; markCompleted('ex6'); showHintToggle(6,false); }
+  else if (correct >= 3) { fb.className='feedback-msg partial'; fb.textContent='⚡ ' + correct + '/5 correct. Green = correct answer.'; buildTFHints(wrongTF); showHintToggle(6, true); }
+  else { fb.className='feedback-msg incorrect'; fb.textContent='❌ ' + correct + '/5 correct. Re-read the Transcription tab!'; buildTFHints(wrongTF); showHintToggle(6, true); }
+}
+function resetEx6() {
+  tfSelected = {};
+  document.querySelectorAll('.tf-btn').forEach(function(b){ b.style.background='#fff'; b.style.borderColor='#d0dede'; b.style.color='#2c2c2a'; });
+  var fb=document.getElementById('fb6'); fb.className='feedback-msg'; fb.textContent='';
+  showHintToggle(6,false);
+}
+</script>
+</body>
+</html>
